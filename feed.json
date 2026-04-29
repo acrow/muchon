@@ -11,6 +11,41 @@
     },
     "items": [
         {
+            "id": "https://acrow.github.io/muchon/centos-an-zhuang-l2tp-vpn-serve.html",
+            "url": "https://acrow.github.io/muchon/centos-an-zhuang-l2tp-vpn-serve.html",
+            "title": "Centos 安装 L2TP VPN Serve",
+            "summary": "内容： # Define your own values for these variables # - IPsec pre-shared key, VPN username and password # - DO NOT put&hellip;",
+            "content_html": "<p><!-- wp:heading {\"level\":5} --></p>\n<h5>1. 安装 docker 略</h5>\n<p><!-- /wp:heading --> <!-- wp:heading {\"level\":5} --></p>\n<h5>2. 在当前目录建立配置文件 l2tp.env</h5>\n<p><!-- /wp:heading --> <!-- wp:paragraph --></p>\n<p>内容：</p>\n<p><!-- /wp:paragraph --> <!-- wp:code --></p>\n<pre class=\"wp-block-code\"><code># Define your own values for these variables\n# - IPsec pre-shared key, VPN username and password\n# - DO NOT put quotes around values, or add space around '='\n# - DO NOT use these characters within values: \\ \" '\nVPN_IPSEC_PSK=test_shared_secret_key\n# Table of user object with login and password attribute in Json format\nVPN_USER_CREDENTIAL_LIST=[{\"login\":\"userTest1\",\"password\":\"test1\"},{\"login\":\"userTest2\",\"password\":\"test2\"}]\nVPN_NETWORK_INTERFACE=eth0\n#VPN_DNS1=192.168.0.1\n#VPN_DNS2=192.168.0.1</code></pre>\n<p><!-- /wp:code --> <!-- wp:paragraph --></p>\n<p>请自行修改密钥与用户</p>\n<p><!-- /wp:paragraph --> <!-- wp:heading {\"level\":5} --></p>\n<h5>3. sudo modprobe af_key</h5>\n<p><!-- /wp:heading --> <!-- wp:heading {\"level\":5} --></p>\n<h5>4. 启动容器</h5>\n<p><!-- /wp:heading --> <!-- wp:code --></p>\n<pre class=\"wp-block-code\"><code>sudo docker run --name l2tp --env-file ./l2tp.env --restart=always -p 500:500/udp -p 4500:4500/udp -p 1701:1701/udp -v /lib/modules:/lib/modules:ro -d --privileged fcojean/l2tp-ipsec-vpn-server</code></pre>\n<p><!-- /wp:code --> <!-- wp:paragraph --></p>\n<p>会自动下载镜像，容器启动后，不出意外应该已经可以连接了</p>\n<p><!-- /wp:paragraph --> <!-- wp:paragraph --></p>\n<p>可通过 docker logs l2tp 验证是否启动成功</p>\n<p><!-- /wp:paragraph --></p>",
+            "author": {
+                "name": "北京木憧科技有限公司"
+            },
+            "tags": [
+                   "centos",
+                   "VPN",
+                   "L2TP"
+            ],
+            "date_published": "2019-06-20T09:23:00+09:00",
+            "date_modified": "2026-04-29T15:19:45+09:00"
+        },
+        {
+            "id": "https://acrow.github.io/muchon/centos7-an-zhuang-nodejs-npm-pm2.html",
+            "url": "https://acrow.github.io/muchon/centos7-an-zhuang-nodejs-npm-pm2.html",
+            "title": "Centos7 安装 nodejs, npm, pm2",
+            "summary": "curl -sL https://rpm.nodesource.com/setup_11.x | bash - yum install nodejs npm instll pm2 -g",
+            "content_html": "<p><!-- wp:heading {\"level\":6} --></p>\n<h6>安装nodej、npm</h6>\n<p><!-- /wp:heading --> <!-- wp:code --></p>\n<pre class=\"wp-block-code\"><code>curl -sL https://rpm.nodesource.com/setup_11.x | bash -\nyum install nodejs</code></pre>\n<p><!-- /wp:code --> <!-- wp:heading {\"level\":6} --></p>\n<h6>安装pm2</h6>\n<p><!-- /wp:heading --> <!-- wp:code --></p>\n<pre class=\"wp-block-code\"><code>npm instll pm2 -g</code></pre>\n<p><!-- /wp:code --></p>",
+            "author": {
+                "name": "北京木憧科技有限公司"
+            },
+            "tags": [
+                   "pm2",
+                   "npm",
+                   "nodejs",
+                   "centos"
+            ],
+            "date_published": "2019-05-28T12:40:00+09:00",
+            "date_modified": "2026-04-29T15:21:11+09:00"
+        },
+        {
             "id": "https://acrow.github.io/muchon/webpack-dai-li-wu-xiao.html",
             "url": "https://acrow.github.io/muchon/webpack-dai-li-wu-xiao.html",
             "title": "Webpack 代理无效",
@@ -20,9 +55,10 @@
                 "name": "北京木憧科技有限公司"
             },
             "tags": [
+                   "webpack"
             ],
-            "date_published": "2026-04-29T15:10:15+09:00",
-            "date_modified": "2026-04-29T15:10:15+09:00"
+            "date_published": "2019-05-24T22:19:00+09:00",
+            "date_modified": "2026-04-29T15:21:50+09:00"
         },
         {
             "id": "https://acrow.github.io/muchon/centos7tong-yong-fu-wu-qi-pei-zhi.html",
@@ -30,13 +66,15 @@
             "title": "Centos7通用服务器配置",
             "summary": "卸载旧版，如果之前没有安装过旧版请忽略 yum remove docker docker-common docker-selinux docker-engine 安装需要的软件包， yum-util 提供yum-config-manager功能，另外两个是devicemapper驱动依赖的 yum install -y yum-utils device-mapper-persistent-data lvm2 设置 yum 源 yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo 安装 yum&hellip;",
             "content_html": "<p><!-- wp:heading {\"level\":3} --></p>\n<h3>安装docker</h3>\n<p><!-- /wp:heading --> <!-- wp:paragraph --></p>\n<p>卸载旧版，如果之前没有安装过旧版请忽略</p>\n<p><!-- /wp:paragraph --> <!-- wp:code --></p>\n<pre class=\"wp-block-code\"><code>yum remove docker  docker-common docker-selinux docker-engine</code></pre>\n<p><!-- /wp:code --> <!-- wp:paragraph --></p>\n<p>安装需要的软件包， yum-util 提供yum-config-manager功能，另外两个是devicemapper驱动依赖的</p>\n<p><!-- /wp:paragraph --> <!-- wp:code --></p>\n<pre class=\"wp-block-code\"><code>yum install -y yum-utils device-mapper-persistent-data lvm2\n</code></pre>\n<p><!-- /wp:code --> <!-- wp:paragraph --></p>\n<p>设置 yum 源</p>\n<p><!-- /wp:paragraph --> <!-- wp:code --></p>\n<pre class=\"wp-block-code\"><code>yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo</code></pre>\n<p><!-- /wp:code --> <!-- wp:paragraph --></p>\n<p>安装</p>\n<p><!-- /wp:paragraph --> <!-- wp:code --></p>\n<pre class=\"wp-block-code\"><code>yum install docker-ce</code></pre>\n<p><!-- /wp:code --> <!-- wp:paragraph --></p>\n<p>启动Docker，并设置为开机自启动</p>\n<p><!-- /wp:paragraph --> <!-- wp:code --></p>\n<pre class=\"wp-block-code\"><code>systemctl start docker.service\nsystemctl enable docker.service</code></pre>\n<p><!-- /wp:code --> <!-- wp:heading {\"level\":3} --></p>\n<h3>安装Docker-Compose</h3>\n<p><!-- /wp:heading --> <!-- wp:code --></p>\n<pre class=\"wp-block-code\"><code>curl -L \"https://github.com/docker/compose/releases/download/1.24.0/docker-compose-$(uname -s)-$(uname -m)\" -o /usr/local/bin/docker-compose\nchmod +x /usr/local/bin/docker-compose</code></pre>\n<p><!-- /wp:code --> <!-- wp:heading {\"level\":4} --></p>\n<h4>安装Nginx</h4>\n<p><!-- /wp:heading --> <!-- wp:code --></p>\n<pre class=\"wp-block-code\"><code>rpm -ivh https://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm\nyum install nginx</code></pre>\n<p><!-- /wp:code --> <!-- wp:paragraph --></p>\n<p>启动Nginx，设置开机自启动</p>\n<p><!-- /wp:paragraph --> <!-- wp:code --></p>\n<pre class=\"wp-block-code\"><code>systemctl start nginx.service\nsystemctl enable nginx.service</code></pre>\n<p><!-- /wp:code --> <!-- wp:heading {\"level\":3} --></p>\n<h3>后续工作</h3>\n<p><!-- /wp:heading --> <!-- wp:paragraph --></p>\n<p>剩下的就是用docker启动各种应用，用nginx代理到外网的事了，此处省略</p>\n<p><!-- /wp:paragraph --></p>",
+            "image": "https://acrow.github.io/muchon/media/posts/1/Gx1WVmPXkAAhy2v.jpg",
             "author": {
                 "name": "北京木憧科技有限公司"
             },
             "tags": [
+                   "centos"
             ],
-            "date_published": "2026-04-29T15:07:34+09:00",
-            "date_modified": "2026-04-29T15:07:34+09:00"
+            "date_published": "2019-04-28T17:47:00+09:00",
+            "date_modified": "2026-04-29T15:23:24+09:00"
         }
     ]
 }
