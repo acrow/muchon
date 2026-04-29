@@ -3,10 +3,117 @@
     <title>木憧科技</title>
     <link href="https://acrow.github.io/muchon/feed.xml" rel="self" />
     <link href="https://acrow.github.io/muchon" />
-    <updated>1970-01-01T09:00:00+09:00</updated>
+    <updated>2026-04-29T15:10:15+09:00</updated>
     <author>
         <name>北京木憧科技有限公司</name>
     </author>
     <id>https://acrow.github.io/muchon</id>
 
+    <entry>
+        <title>Webpack 代理无效</title>
+        <author>
+            <name>北京木憧科技有限公司</name>
+        </author>
+        <link href="https://acrow.github.io/muchon/webpack-dai-li-wu-xiao.html"/>
+        <id>https://acrow.github.io/muchon/webpack-dai-li-wu-xiao.html</id>
+
+        <updated>2026-04-29T15:10:15+09:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    在自己的imac上调试前端程序，使用webpack的代理功能试图连接自己机器上的后端服务。发现代理无效，足足折腾了一下午，最后总算搞定了。 记录一下具体的原因： 以我们实际发生的问题为例： 前端用webpack-dev-server启动在 localhost:8080，接口路径为 /api/somefunction，需要代理映射到 localhost:8081/api/somefunction上 但是实际上，localhost:8081上面该方法的路径是 /api/somefunction/，注意多了一个斜线。 由于localhost:8081一直是可以访问的，所以浏览器始终返回的是 localhost:8080/api/somefunction 不存在，404错误。理所当然的就会被认为是代理没有起作用。怀疑ide的问题，怀疑终端的问题，怀疑操作系统的问题，怀疑机器的问题 当然同样的代码在别人的机器上，是可以出现代理错误的，因为别人的机器上没有启动localhost:8081的服务 最终直到把自己的localhost:8081停掉，才发现了根本的原因。 希望看到的人能够有所借鉴，少走弯路。
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p><!-- wp:paragraph --></p>
+<p>在自己的imac上调试前端程序，使用webpack的代理功能试图连接自己机器上的后端服务。发现代理无效，足足折腾了一下午，最后总算搞定了。</p>
+<p><!-- /wp:paragraph --> <!-- wp:paragraph --></p>
+<p>记录一下具体的原因：</p>
+<p><!-- /wp:paragraph --> <!-- wp:list {"ordered":true} --></p>
+<ol><!-- wp:list-item -->
+<li>当代理的目的站点存在的时候，如果接口不存在（或路径错误），则浏览器中会看到webpack返回了404，其地址是代理之前的地址。并且，终端中不会显示错误。</li>
+<!-- /wp:list-item --> <!-- wp:list-item -->
+<li>当代理的目的站点不存在的时候，则浏览器中会看到webpack返回了504，返回内容为代理失败。并且在终端终会显示详细的失败代理信息，从哪映射到哪。</li>
+<!-- /wp:list-item --></ol>
+<p><!-- /wp:list --> <!-- wp:paragraph --></p>
+<p>以我们实际发生的问题为例：</p>
+<p><!-- /wp:paragraph --> <!-- wp:paragraph --></p>
+<p>前端用webpack-dev-server启动在 localhost:8080，接口路径为 /api/somefunction，需要代理映射到 localhost:8081/api/somefunction上</p>
+<p><!-- /wp:paragraph --> <!-- wp:paragraph --></p>
+<p>但是实际上，localhost:8081上面该方法的路径是 /api/somefunction/，<strong>注意多了一个斜线</strong>。</p>
+<p><!-- /wp:paragraph --> <!-- wp:paragraph --></p>
+<p>由于localhost:8081一直是可以访问的，所以浏览器始终返回的是 localhost:8080/api/somefunction 不存在，404错误。理所当然的就会被认为是代理没有起作用。怀疑ide的问题，怀疑终端的问题，怀疑操作系统的问题，怀疑机器的问题</p>
+<p><!-- /wp:paragraph --> <!-- wp:paragraph --></p>
+<p>当然同样的代码在别人的机器上，是可以出现代理错误的，因为别人的机器上没有启动localhost:8081的服务</p>
+<p><!-- /wp:paragraph --> <!-- wp:paragraph --></p>
+<p>最终直到把自己的localhost:8081停掉，才发现了根本的原因。</p>
+<p><!-- /wp:paragraph --> <!-- wp:paragraph --></p>
+<p>希望看到的人能够有所借鉴，少走弯路。</p>
+<p><!-- /wp:paragraph --></p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Centos7通用服务器配置</title>
+        <author>
+            <name>北京木憧科技有限公司</name>
+        </author>
+        <link href="https://acrow.github.io/muchon/centos7tong-yong-fu-wu-qi-pei-zhi.html"/>
+        <id>https://acrow.github.io/muchon/centos7tong-yong-fu-wu-qi-pei-zhi.html</id>
+
+        <updated>2026-04-29T15:07:34+09:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    卸载旧版，如果之前没有安装过旧版请忽略 yum remove docker docker-common docker-selinux docker-engine 安装需要的软件包， yum-util 提供yum-config-manager功能，另外两个是devicemapper驱动依赖的 yum install -y yum-utils device-mapper-persistent-data lvm2 设置 yum 源 yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo 安装 yum&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p><!-- wp:heading {"level":3} --></p>
+<h3>安装docker</h3>
+<p><!-- /wp:heading --> <!-- wp:paragraph --></p>
+<p>卸载旧版，如果之前没有安装过旧版请忽略</p>
+<p><!-- /wp:paragraph --> <!-- wp:code --></p>
+<pre class="wp-block-code"><code>yum remove docker  docker-common docker-selinux docker-engine</code></pre>
+<p><!-- /wp:code --> <!-- wp:paragraph --></p>
+<p>安装需要的软件包， yum-util 提供yum-config-manager功能，另外两个是devicemapper驱动依赖的</p>
+<p><!-- /wp:paragraph --> <!-- wp:code --></p>
+<pre class="wp-block-code"><code>yum install -y yum-utils device-mapper-persistent-data lvm2
+</code></pre>
+<p><!-- /wp:code --> <!-- wp:paragraph --></p>
+<p>设置 yum 源</p>
+<p><!-- /wp:paragraph --> <!-- wp:code --></p>
+<pre class="wp-block-code"><code>yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo</code></pre>
+<p><!-- /wp:code --> <!-- wp:paragraph --></p>
+<p>安装</p>
+<p><!-- /wp:paragraph --> <!-- wp:code --></p>
+<pre class="wp-block-code"><code>yum install docker-ce</code></pre>
+<p><!-- /wp:code --> <!-- wp:paragraph --></p>
+<p>启动Docker，并设置为开机自启动</p>
+<p><!-- /wp:paragraph --> <!-- wp:code --></p>
+<pre class="wp-block-code"><code>systemctl start docker.service
+systemctl enable docker.service</code></pre>
+<p><!-- /wp:code --> <!-- wp:heading {"level":3} --></p>
+<h3>安装Docker-Compose</h3>
+<p><!-- /wp:heading --> <!-- wp:code --></p>
+<pre class="wp-block-code"><code>curl -L "https://github.com/docker/compose/releases/download/1.24.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+chmod +x /usr/local/bin/docker-compose</code></pre>
+<p><!-- /wp:code --> <!-- wp:heading {"level":4} --></p>
+<h4>安装Nginx</h4>
+<p><!-- /wp:heading --> <!-- wp:code --></p>
+<pre class="wp-block-code"><code>rpm -ivh https://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm
+yum install nginx</code></pre>
+<p><!-- /wp:code --> <!-- wp:paragraph --></p>
+<p>启动Nginx，设置开机自启动</p>
+<p><!-- /wp:paragraph --> <!-- wp:code --></p>
+<pre class="wp-block-code"><code>systemctl start nginx.service
+systemctl enable nginx.service</code></pre>
+<p><!-- /wp:code --> <!-- wp:heading {"level":3} --></p>
+<h3>后续工作</h3>
+<p><!-- /wp:heading --> <!-- wp:paragraph --></p>
+<p>剩下的就是用docker启动各种应用，用nginx代理到外网的事了，此处省略</p>
+<p><!-- /wp:paragraph --></p>
+            ]]>
+        </content>
+    </entry>
 </feed>
