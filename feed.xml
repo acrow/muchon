@@ -10,44 +10,6 @@
     <id>https://acrow.github.io/muchon</id>
 
     <entry>
-        <title>社会保险申报方法</title>
-        <author>
-            <name>北京木憧科技有限公司</name>
-        </author>
-        <link href="https://acrow.github.io/muchon/she-hui-bao-xian-shen-bao-fang-fa.html"/>
-        <id>https://acrow.github.io/muchon/she-hui-bao-xian-shen-bao-fang-fa.html</id>
-
-        <updated>2024-10-23T12:37:23+09:00</updated>
-            <summary type="html">
-                <![CDATA[
-                    登录 电子税务局 选择 地方特色 选择 社保业务 -> 日常申报
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <!-- wp:paragraph -->
-<p>登录 <strong><em>电子税务局</em></strong></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>选择 <em><strong>地方特色</strong></em></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:image {"id":419,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><figure class="wp-image-419"><img loading="lazy" src="https://acrow.github.io/muchon/media/posts/26/image.png" alt=""  sizes="(max-width: 48em) 100vw, 768px" srcset="https://acrow.github.io/muchon/media/posts/26/responsive/image-xs.png 300w ,https://acrow.github.io/muchon/media/posts/26/responsive/image-sm.png 480w ,https://acrow.github.io/muchon/media/posts/26/responsive/image-md.png 768w ,https://acrow.github.io/muchon/media/posts/26/responsive/image-lg.png 1024w ,https://acrow.github.io/muchon/media/posts/26/responsive/image-xl.png 1360w ,https://acrow.github.io/muchon/media/posts/26/responsive/image-2xl.png 1600w"></figure></figure>
-<!-- /wp:image -->
-
-<!-- wp:paragraph -->
-<p>选择 <strong><em>社保业务</em></strong> -> <strong><em>日常申报</em></strong></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:image {"id":420,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><figure class="wp-image-420"><img loading="lazy" src="https://acrow.github.io/muchon/media/posts/26/image-1.png" alt=""  sizes="(max-width: 48em) 100vw, 768px" srcset="https://acrow.github.io/muchon/media/posts/26/responsive/image-1-xs.png 300w ,https://acrow.github.io/muchon/media/posts/26/responsive/image-1-sm.png 480w ,https://acrow.github.io/muchon/media/posts/26/responsive/image-1-md.png 768w ,https://acrow.github.io/muchon/media/posts/26/responsive/image-1-lg.png 1024w ,https://acrow.github.io/muchon/media/posts/26/responsive/image-1-xl.png 1360w ,https://acrow.github.io/muchon/media/posts/26/responsive/image-1-2xl.png 1600w"></figure></figure>
-<!-- /wp:image -->
-            ]]>
-        </content>
-    </entry>
-    <entry>
         <title>win10、win11 连接L2TP失败</title>
         <author>
             <name>北京木憧科技有限公司</name>
@@ -356,60 +318,6 @@ export default {
         </content>
     </entry>
     <entry>
-        <title>Idea激活方法</title>
-        <author>
-            <name>北京木憧科技有限公司</name>
-        </author>
-        <link href="https://acrow.github.io/muchon/ideaji-huo-fang-fa.html"/>
-        <id>https://acrow.github.io/muchon/ideaji-huo-fang-fa.html</id>
-
-        <updated>2019-11-19T13:19:46+09:00</updated>
-            <summary type="html">
-                <![CDATA[
-                    此方法需要用补丁文件进行激活，激活后时间期限至2089年。 -javaagent:D:\Program Files\JetBrains\IntelliJ IDEA 2019.2.4\bin\jetbrains-agent.jar 打开idea，输入激活码 JQE11SV0BR-eyJsaWNlbnNlSWQiOiJKUUUxMVNWMEJSIiwibGljZW5zZWVOYW1lIjoicGlnNiIsImFzc2lnbmVlTmFtZSI6IiIsImFzc2lnbmVlRW1haWwiOiIiLCJsaWNlbnNlUmVzdHJpY3Rpb24iOiIiLCJjaGVja0NvbmN1cnJlbnRVc2UiOmZhbHNlLCJwcm9kdWN0cyI6W3siY29kZSI6IklJIiwiZmFsbGJhY2tEYXRlIjoiMjA4OS0wNy0wNyIsInBhaWRVcFRvIjoiMjA4OS0wNy0wNyJ9LHsiY29kZSI6IkFDIiwiZmFsbGJhY2tEYXRlIjoiMjA4OS0wNy0wNyIsInBhaWRVcFRvIjoiMjA4OS0wNy0wNyJ9LHsiY29kZSI6IkRQTiIsImZhbGxiYWNrRGF0ZSI6IjIwODktMDctMDciLCJwYWlkVXBUbyI6IjIwODktMDctMDcifSx7ImNvZGUiOiJQUyIsImZhbGxiYWNrRGF0ZSI6IjIwODktMDctMDciLCJwYWlkVXBUbyI6IjIwODktMDctMDcifSx7ImNvZGUiOiJHTyIsImZhbGxiYWNrRGF0ZSI6IjIwODktMDctMDciLCJwYWlkVXBUbyI6IjIwODktMDctMDcifSx7ImNvZGUiOiJETSIsImZhbGxiYWNrRGF0ZSI6IjIwODktMDctMDciLCJwYWlkVXBUbyI6IjIwODktMDctMDcifSx7ImNvZGUiOiJDTCIsImZhbGxiYWNrRGF0ZSI6IjIwODktMDctMDciLCJwYWlkVXBUbyI6IjIwODktMDctMDcifSx7ImNvZGUiOiJSUzAiLCJmYWxsYmFja0RhdGUiOiIyMDg5LTA3LTA3IiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiUkMiLCJmYWxsYmFja0RhdGUiOiIyMDg5LTA3LTA3IiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiUkQiLCJmYWxsYmFja0RhdGUiOiIyMDg5LTA3LTA3IiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiUEMiLCJmYWxsYmFja0RhdGUiOiIyMDg5LTA3LTA3IiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiUk0iLCJmYWxsYmFja0RhdGUiOiIyMDg5LTA3LTA3IiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiV1MiLCJmYWxsYmFja0RhdGUiOiIyMDg5LTA3LTA3IiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiREIiLCJmYWxsYmFja0RhdGUiOiIyMDg5LTA3LTA3IiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiREMiLCJmYWxsYmFja0RhdGUiOiIyMDg5LTA3LTA3IiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiUlNVIiwiZmFsbGJhY2tEYXRlIjoiMjA4OS0wNy0wNyIsInBhaWRVcFRvIjoiMjA4OS0wNy0wNyJ9XSwiaGFzaCI6IjEyNzk2ODc3LzAiLCJncmFjZVBlcmlvZERheXMiOjcsImF1dG9Qcm9sb25nYXRlZCI6ZmFsc2UsImlzQXV0b1Byb2xvbmdhdGVkIjpmYWxzZX0=-khgsQrnDiglknF0m+yyoYGJXX4vFE3IIVaoMd0bkpfAlMiYM4FUK1JM7uMnVSN0NBC7qtZjYlNzPscEyKE8634uGuY/uToFQnIOCtyUfBxB6j0wF/DcCjhKMNDbnJ1RKZ2VaALuC9B6d6lhtEKm9+urXWTBq7h2VfIBv5wk1Ul9T/m9Dwkz/LccTqnxO0PP288fF13ZbmcLI1/D0dqp/QxYshW6CLR+2Tvk6QCPoaOTKDU/eL1AssD7/mO1g2ZJA+k//8qfRMLgdLmLrMdyiaIhrsM/jJk2qDfTaMcCNylkWXLgKwSvEQG95IhitLN9+GQ4pBW3gOTNl82Gem7jEkA==-MIIElTCCAn2gAwIBAgIBCTANBgkqhkiG9w0BAQsFADAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBMB4XDTE4MTEwMTEyMjk0NloXDTIwMTEwMjEyMjk0NlowaDELMAkGA1UEBhMCQ1oxDjAMBgNVBAgMBU51c2xlMQ8wDQYDVQQHDAZQcmFndWUxGTAXBgNVBAoMEEpldEJyYWlucyBzLnIuby4xHTAbBgNVBAMMFHByb2QzeS1mcm9tLTIwMTgxMTAxMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5ndaik1GD0nyTdqkZgURQZGW+RGxCdBITPXIwpjhhaD0SXGa4XSZBEBoiPdY6XV6pOfUJeyfi9dXsY4MmT0D+sKoST3rSw96xaf9FXPvOjn4prMTdj3Ji3CyQrGWeQU2nzYqFrp1QYNLAbaViHRKuJrYHI6GCvqCbJe0LQ8qqUiVMA9wG/PQwScpNmTF9Kp2Iej+Z5OUxF33zzm+vg/nYV31HLF7fJUAplI/1nM+ZG8K+AXWgYKChtknl3sW9PCQa3a3imPL9GVToUNxc0wcuTil8mqveWcSQCHYxsIaUajWLpFzoO2AhK4mfYBSStAqEjoXRTuj17mo8Q6M2SHOcwIDAQABo4GZMIGWMAkGA1UdEwQCMAAwHQYDVR0OBBYEFGEpG9oZGcfLMGNBkY7SgHiMGgTcMEgGA1UdIwRBMD+AFKOetkhnQhI2Qb1t4Lm0oFKLl/GzoRykGjAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBggkA0myxg7KDeeEwEwYDVR0lBAwwCgYIKwYBBQUHAwEwCwYDVR0PBAQDAgWgMA0GCSqGSIb3DQEBCwUAA4ICAQBonMu8oa3vmNAa4RQP8gPGlX3SQaA3WCRUAj6Zrlk8AesKV1YSkh5D2l+yUk6njysgzfr1bIR5xF8eup5xXc4/G7NtVYRSMvrd6rfQcHOyK5UFJLm+8utmyMIDrZOzLQuTsT8NxFpbCVCfV5wNRu4rChrCuArYVGaKbmp9ymkw1PU6+HoO5i2wU3ikTmRv8IRjrlSStyNzXpnPTwt7bja19ousk56r40SmlmC04GdDHErr0ei2UbjUua5kw71Qn9g02tL9fERI2sSRjQrvPbn9INwRWl5+k05mlKekbtbu2ev2woJFZK4WEXAd/GaAdeZZdumv8T2idDFL7cAirJwcrbfpawPeXr52oKTPnXfi0l5+g9Gnt/wfiXCrPElX6ycTR6iL3GC2VR4jTz6YatT4Ntz59/THOT7NJQhr6AyLkhhJCdkzE2cob/KouVp4ivV7Q3Fc6HX7eepHAAF/DpxwgOrg9smX6coXLgfp0b1RU2u/tUNID04rpNxTMueTtrT8WSskqvaJd3RH8r7cnRj6Y2hltkja82HlpDURDxDTRvv+krbwMr26SB/40BjpMUrDRCeKuiBahC0DCoU/4+ze1l94wVUhdkCfL0GpJrMSCDEK+XEurU18Hb7WT+ThXbkdl6VpFdHsRvqAnhR2g4b+Qzgidmuky5NUZVfEaZqV/g==
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <!-- wp:paragraph -->
-<p>
-
-此方法需要用补丁文件进行激活，激活后时间期限至2089年。
-
-</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:list -->
-<ul><li>下载<a href="https://pan.baidu.com/s/1EBGYOyxON9DnmNdr62moAw" target="_blank" rel="noopener noreferrer">补丁文件(提取码: jwci)</a>，将文件拷贝至 idea 安装目录中的bin 子目录</li></ul>
-<!-- /wp:list -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:list -->
-<ul><li>编辑文件（idea.exe.vmoptions, idea64.exe.vmoptions），在文件尾追加新行 </li></ul>
-<!-- /wp:list -->
-
-<!-- wp:code -->
-<pre class="wp-block-code"><code>-javaagent:D:\Program Files\JetBrains\IntelliJ IDEA 2019.2.4\bin\jetbrains-agent.jar</code></pre>
-<!-- /wp:code -->
-
-<!-- wp:list -->
-<ul><li>打开idea，输入激活码</li></ul>
-<!-- /wp:list -->
-
-<!-- wp:code -->
-<pre class="wp-block-code"><code>JQE11SV0BR-eyJsaWNlbnNlSWQiOiJKUUUxMVNWMEJSIiwibGljZW5zZWVOYW1lIjoicGlnNiIsImFzc2lnbmVlTmFtZSI6IiIsImFzc2lnbmVlRW1haWwiOiIiLCJsaWNlbnNlUmVzdHJpY3Rpb24iOiIiLCJjaGVja0NvbmN1cnJlbnRVc2UiOmZhbHNlLCJwcm9kdWN0cyI6W3siY29kZSI6IklJIiwiZmFsbGJhY2tEYXRlIjoiMjA4OS0wNy0wNyIsInBhaWRVcFRvIjoiMjA4OS0wNy0wNyJ9LHsiY29kZSI6IkFDIiwiZmFsbGJhY2tEYXRlIjoiMjA4OS0wNy0wNyIsInBhaWRVcFRvIjoiMjA4OS0wNy0wNyJ9LHsiY29kZSI6IkRQTiIsImZhbGxiYWNrRGF0ZSI6IjIwODktMDctMDciLCJwYWlkVXBUbyI6IjIwODktMDctMDcifSx7ImNvZGUiOiJQUyIsImZhbGxiYWNrRGF0ZSI6IjIwODktMDctMDciLCJwYWlkVXBUbyI6IjIwODktMDctMDcifSx7ImNvZGUiOiJHTyIsImZhbGxiYWNrRGF0ZSI6IjIwODktMDctMDciLCJwYWlkVXBUbyI6IjIwODktMDctMDcifSx7ImNvZGUiOiJETSIsImZhbGxiYWNrRGF0ZSI6IjIwODktMDctMDciLCJwYWlkVXBUbyI6IjIwODktMDctMDcifSx7ImNvZGUiOiJDTCIsImZhbGxiYWNrRGF0ZSI6IjIwODktMDctMDciLCJwYWlkVXBUbyI6IjIwODktMDctMDcifSx7ImNvZGUiOiJSUzAiLCJmYWxsYmFja0RhdGUiOiIyMDg5LTA3LTA3IiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiUkMiLCJmYWxsYmFja0RhdGUiOiIyMDg5LTA3LTA3IiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiUkQiLCJmYWxsYmFja0RhdGUiOiIyMDg5LTA3LTA3IiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiUEMiLCJmYWxsYmFja0RhdGUiOiIyMDg5LTA3LTA3IiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiUk0iLCJmYWxsYmFja0RhdGUiOiIyMDg5LTA3LTA3IiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiV1MiLCJmYWxsYmFja0RhdGUiOiIyMDg5LTA3LTA3IiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiREIiLCJmYWxsYmFja0RhdGUiOiIyMDg5LTA3LTA3IiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiREMiLCJmYWxsYmFja0RhdGUiOiIyMDg5LTA3LTA3IiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiUlNVIiwiZmFsbGJhY2tEYXRlIjoiMjA4OS0wNy0wNyIsInBhaWRVcFRvIjoiMjA4OS0wNy0wNyJ9XSwiaGFzaCI6IjEyNzk2ODc3LzAiLCJncmFjZVBlcmlvZERheXMiOjcsImF1dG9Qcm9sb25nYXRlZCI6ZmFsc2UsImlzQXV0b1Byb2xvbmdhdGVkIjpmYWxzZX0=-khgsQrnDiglknF0m+yyoYGJXX4vFE3IIVaoMd0bkpfAlMiYM4FUK1JM7uMnVSN0NBC7qtZjYlNzPscEyKE8634uGuY/uToFQnIOCtyUfBxB6j0wF/DcCjhKMNDbnJ1RKZ2VaALuC9B6d6lhtEKm9+urXWTBq7h2VfIBv5wk1Ul9T/m9Dwkz/LccTqnxO0PP288fF13ZbmcLI1/D0dqp/QxYshW6CLR+2Tvk6QCPoaOTKDU/eL1AssD7/mO1g2ZJA+k//8qfRMLgdLmLrMdyiaIhrsM/jJk2qDfTaMcCNylkWXLgKwSvEQG95IhitLN9+GQ4pBW3gOTNl82Gem7jEkA==-MIIElTCCAn2gAwIBAgIBCTANBgkqhkiG9w0BAQsFADAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBMB4XDTE4MTEwMTEyMjk0NloXDTIwMTEwMjEyMjk0NlowaDELMAkGA1UEBhMCQ1oxDjAMBgNVBAgMBU51c2xlMQ8wDQYDVQQHDAZQcmFndWUxGTAXBgNVBAoMEEpldEJyYWlucyBzLnIuby4xHTAbBgNVBAMMFHByb2QzeS1mcm9tLTIwMTgxMTAxMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5ndaik1GD0nyTdqkZgURQZGW+RGxCdBITPXIwpjhhaD0SXGa4XSZBEBoiPdY6XV6pOfUJeyfi9dXsY4MmT0D+sKoST3rSw96xaf9FXPvOjn4prMTdj3Ji3CyQrGWeQU2nzYqFrp1QYNLAbaViHRKuJrYHI6GCvqCbJe0LQ8qqUiVMA9wG/PQwScpNmTF9Kp2Iej+Z5OUxF33zzm+vg/nYV31HLF7fJUAplI/1nM+ZG8K+AXWgYKChtknl3sW9PCQa3a3imPL9GVToUNxc0wcuTil8mqveWcSQCHYxsIaUajWLpFzoO2AhK4mfYBSStAqEjoXRTuj17mo8Q6M2SHOcwIDAQABo4GZMIGWMAkGA1UdEwQCMAAwHQYDVR0OBBYEFGEpG9oZGcfLMGNBkY7SgHiMGgTcMEgGA1UdIwRBMD+AFKOetkhnQhI2Qb1t4Lm0oFKLl/GzoRykGjAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBggkA0myxg7KDeeEwEwYDVR0lBAwwCgYIKwYBBQUHAwEwCwYDVR0PBAQDAgWgMA0GCSqGSIb3DQEBCwUAA4ICAQBonMu8oa3vmNAa4RQP8gPGlX3SQaA3WCRUAj6Zrlk8AesKV1YSkh5D2l+yUk6njysgzfr1bIR5xF8eup5xXc4/G7NtVYRSMvrd6rfQcHOyK5UFJLm+8utmyMIDrZOzLQuTsT8NxFpbCVCfV5wNRu4rChrCuArYVGaKbmp9ymkw1PU6+HoO5i2wU3ikTmRv8IRjrlSStyNzXpnPTwt7bja19ousk56r40SmlmC04GdDHErr0ei2UbjUua5kw71Qn9g02tL9fERI2sSRjQrvPbn9INwRWl5+k05mlKekbtbu2ev2woJFZK4WEXAd/GaAdeZZdumv8T2idDFL7cAirJwcrbfpawPeXr52oKTPnXfi0l5+g9Gnt/wfiXCrPElX6ycTR6iL3GC2VR4jTz6YatT4Ntz59/THOT7NJQhr6AyLkhhJCdkzE2cob/KouVp4ivV7Q3Fc6HX7eepHAAF/DpxwgOrg9smX6coXLgfp0b1RU2u/tUNID04rpNxTMueTtrT8WSskqvaJd3RH8r7cnRj6Y2hltkja82HlpDURDxDTRvv+krbwMr26SB/40BjpMUrDRCeKuiBahC0DCoU/4+ze1l94wVUhdkCfL0GpJrMSCDEK+XEurU18Hb7WT+ThXbkdl6VpFdHsRvqAnhR2g4b+Qzgidmuky5NUZVfEaZqV/g==</code></pre>
-<!-- /wp:code -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-            ]]>
-        </content>
-    </entry>
-    <entry>
         <title>Postman 打不开了</title>
         <author>
             <name>北京木憧科技有限公司</name>
@@ -497,6 +405,87 @@ export default {
 
 <!-- wp:paragraph -->
 <p>记录一下这个弱智的经历，希望下回别再犯同样的错误！</p>
+<!-- /wp:paragraph -->
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>记录一次wordpress迁移过程</title>
+        <author>
+            <name>北京木憧科技有限公司</name>
+        </author>
+        <link href="https://acrow.github.io/muchon/ji-lu-yi-ci-wordpressqian-yi-guo-cheng.html"/>
+        <id>https://acrow.github.io/muchon/ji-lu-yi-ci-wordpressqian-yi-guo-cheng.html</id>
+
+        <updated>2019-08-23T22:15:25+09:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    迁移前的wordpress是用docker部署的，迁移后要放在windows的Pc机上 docker exec -it 容器名 mysqldump -u用户名 -p密码 数据库名 >./db.sql 把迁移前的wordpress目录整体备份打包为 oldWp.zip 直接下载、安装 phpStudy（phpnow已经废了，害我走了弯路），默认是安装在了D:/phpStudyPro目录用PhpStudy的控制面板追加wordpress数据库下载wordpress，解压后直接放在 phpStudyPro目录中的WWW子目录中 （这一步可能不需要） 浏览器里面输入 https://localhost，按照向导生成wordpress网站（这一步可能不需要）把数据库备份db.sql导入wordpress数据库 mysql -u用户名 -p密码 use wordpress&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <!-- wp:paragraph -->
+<p>迁移前的wordpress是用docker部署的，迁移后要放在windows的Pc机上</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li> 把迁移前的数据库结构和数据一起备份为db.sql </li></ul>
+<!-- /wp:list -->
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>docker exec -it 容器名 mysqldump -u用户名 -p密码 数据库名 >./db.sql</code></pre>
+<!-- /wp:code -->
+
+<!-- wp:list -->
+<ul><li> 把迁移前的wordpress目录整体备份打包为 oldWp.zip </li><li>直接下载、安装 phpStudy（phpnow已经废了，害我走了弯路），默认是安装在了D:/phpStudyPro目录</li><li>用PhpStudy的控制面板追加wordpress数据库</li><li>下载wordpress，解压后直接放在 phpStudyPro目录中的WWW子目录中 <br>（这一步可能不需要） </li><li>浏览器里面输入 https://localhost，按照向导生成wordpress网站（这一步可能不需要）</li><li>把数据库备份db.sql导入wordpress数据库</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>mysql -u用户名 -p密码
+use wordpress
+source d:/dbsql</code></pre>
+<!-- /wp:code -->
+
+<!-- wp:list -->
+<ul><li>把oldWp.zip解压至phpStudyPro/WWW</li><li>刷新https://localhost</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>下载和安装新的wordpress，不是必须的。我是因为把旧的wordpress部署后，怎么都连不上数据库。所以安装新的对比了一下 wp_config.php。原来是因为host不正确。之前是docker部署的所以这里需要把host从db:3306改为localhost。</p>
+<!-- /wp:paragraph -->
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>wordpress 相对路径</title>
+        <author>
+            <name>北京木憧科技有限公司</name>
+        </author>
+        <link href="https://acrow.github.io/muchon/wordpress-xiang-dui-lu-jing.html"/>
+        <id>https://acrow.github.io/muchon/wordpress-xiang-dui-lu-jing.html</id>
+
+        <updated>2019-08-23T16:37:33+09:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    在根目录下的wp_config.php最后追加下面内容 $home = 'https://'.$_SERVER['HTTP_HOST']; $siteurl = 'https://'.$_SERVER['HTTP_HOST']; define('WP_HOME', $home); define('WP_SITEURL', $siteurl); 这样修改完了，图片之类的静态文件不受影响，需要的话要手工将静态文件路径改为相对路径。
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <!-- wp:paragraph -->
+<p>在根目录下的wp_config.php最后追加下面内容</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>$home = 'https://'.$_SERVER['HTTP_HOST'];
+$siteurl = 'https://'.$_SERVER['HTTP_HOST'];
+define('WP_HOME', $home);
+define('WP_SITEURL', $siteurl);</code></pre>
+<!-- /wp:code -->
+
+<!-- wp:paragraph -->
+<p>这样修改完了，图片之类的静态文件不受影响，需要的话要手工将静态文件路径改为相对路径。</p>
 <!-- /wp:paragraph -->
             ]]>
         </content>
