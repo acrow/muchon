@@ -1,0 +1,46 @@
+<!DOCTYPE html><html lang="zh-cn"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"><title>VUE 双向数据同步 - 木憧科技</title><meta name="description" content="vue报错： void mutating a prop directly since the value will be overwritten whenever the parent component re-renders.Instead, use a data or computed property&hellip;"><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="canonical" href="https://acrow.github.io/muchon/vue-shuang-xiang-shu-ju-tong-bu.html"><link rel="alternate" type="application/atom+xml" href="https://acrow.github.io/muchon/feed.xml" title="木憧科技 - RSS"><link rel="alternate" type="application/json" href="https://acrow.github.io/muchon/feed.json" title="木憧科技 - JSON"><meta property="og:title" content="VUE 双向数据同步"><meta property="og:image" content="https://acrow.github.io/muchon/media/website/logo-3.png"><meta property="og:image:width" content="110"><meta property="og:image:height" content="110"><meta property="og:site_name" content="木憧科技"><meta property="og:description" content="vue报错： void mutating a prop directly since the value will be overwritten whenever the parent component re-renders.Instead, use a data or computed property&hellip;"><meta property="og:url" content="https://acrow.github.io/muchon/vue-shuang-xiang-shu-ju-tong-bu.html"><meta property="og:type" content="article"><link rel="stylesheet" href="https://acrow.github.io/muchon/assets/css/fontawesome-all.min.css?v=85514f933f9e0b82460af63f1a403fa5"><link rel="stylesheet" href="https://acrow.github.io/muchon/assets/css/style.css?v=6d92336350d5374cc2b2fb5720b76be5"><noscript><link rel="stylesheet" href="https://acrow.github.io/muchon/assets/css/noscript.css?v=efa867a99f5064d6729e4dc2008ad50b"></noscript><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://acrow.github.io/muchon/vue-shuang-xiang-shu-ju-tong-bu.html"},"headline":"VUE 双向数据同步","datePublished":"2020-01-23T00:53+09:00","dateModified":"2026-04-29T15:32+09:00","image":{"@type":"ImageObject","url":"https://acrow.github.io/muchon/media/website/logo-3.png","height":110,"width":110},"description":"vue报错： void mutating a prop directly since the value will be overwritten whenever the parent component re-renders.Instead, use a data or computed property&hellip;","author":{"@type":"Person","name":"北京木憧科技有限公司","url":"https://acrow.github.io/muchon/authors/bei-jing-mu-chong-ke-ji-you-xian-gong-si/"},"publisher":{"@type":"Organization","name":"北京木憧科技有限公司","logo":{"@type":"ImageObject","url":"https://acrow.github.io/muchon/media/website/logo-3.png","height":110,"width":110}}}</script><style>#wrapper > .bg {
+               background-image: url(https://acrow.github.io/muchon/assets/images/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(https://acrow.github.io/muchon/media/website/coding-1853305_1920.jpg);
+           }</style><noscript><style>img[loading] {
+                    opacity: 1;
+                }</style></noscript></head><body class="is-preload post-template"><div id="wrapper"><header id="header"><a class="logo logo-image" href="https://acrow.github.io/muchon/"><img src="https://acrow.github.io/muchon/media/website/logo-3.png" alt="木憧科技" width="110" height="110"></a></header><main id="main"><article class="post"><header class="major"><time datetime="2020-01-23T00:53" class="date">一月 23, 2020</time><h1>VUE 双向数据同步</h1><p class="post__inner"></p></header><div class="post__inner post__entry"><p>vue报错：</p><pre class="wp-block-code"><code>void mutating a prop directly since the value will be overwritten whenever the parent component re-renders.Instead, use a data or computed property based on the prop's value. Prop being mutated:</code></pre><p>这是由于子组件更新了父组件传入的属性值导致的，而vue不建议双向数据同步，要求数据是单向传递。然而，有时我们确实需要子组件与父组件更新同一个值，vue的解决方案如下：</p><p>子组件：</p><pre class="wp-block-code"><code>&lt;template>
+  &lt;div vi-if="visible">
+    我是子组件
+    &lt;button @click="hide">关闭&lt;/button>
+  &lt;/div>
+&lt;/template>
+&lt;script>
+export default {
+  props: {
+    visible: {type: Boolean, default: false}
+  }
+  methods: {
+    hide () {
+      this.$emit('update:visible', false)
+    }
+  }
+}
+&lt;/script>
+</code></pre><p>父组件：</p><pre class="wp-block-code"><code>&lt;template>
+    &lt;div>
+       &lt;button @click="show">显示&lt;/button>
+       &lt;child v-model="entity" :visible.sync="showChild"/>
+    &lt;/div>
+&lt;/template>
+&lt;script>
+export default {
+  components: {
+    'child': () => import('./child')
+  },
+  data () {
+    return {
+      showChild: false
+    }
+  },
+  methods: {
+    show() {
+      this.showEChild = true
+    }
+  }
+}
+&lt;/script>
+</code></pre><p>关键点是父组件上面的 <strong>.sync</strong> 与子组件上面的 <strong>update:</strong></p></div><footer class="post__inner post__footer"><p class="post__last-updated">This article was updated on 四月 29, 2026</p><div class="post__share-tag-container"><div class="post__share"><button class="post__share-button js-post__share-button icon" aria-label="Share button"><i class="fas fa-share-alt"></i></button><div class="post__share-popup js-post__share-popup"></div></div></div><div class="post__bio"><div><h3><a href="https://acrow.github.io/muchon/authors/bei-jing-mu-chong-ke-ji-you-xian-gong-si/" class="invert" rel="author">北京木憧科技有限公司</a></h3></div></div></footer></article></main><footer id="copyright"><ul><li><a href="mailto:master@muchon.cn">master@muchon.cn</a></li><li>© 2026 北京木憧科技有限公司</li><li><a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow noopener">京ICP备16010932号</a></li></ul></footer></div><script src="https://acrow.github.io/muchon/assets/js/jquery.min.js?v=c9771cc3e90e18f5336eedbd0fffb2cf"></script><script src="https://acrow.github.io/muchon/assets/js/jquery.scrollex.min.js?v=f89065e3d988006af9791b44561d7c90"></script><script src="https://acrow.github.io/muchon/assets/js/jquery.scrolly.min.js?v=1ed5a78bde1476875a40f6b9ff44fc14"></script><script src="https://acrow.github.io/muchon/assets/js/browser.min.js?v=c07298dd19048a8a69ad97e754dfe8d0"></script><script src="https://acrow.github.io/muchon/assets/js/breakpoints.min.js?v=81a479eb099e3b187613943b085923b8"></script><script src="https://acrow.github.io/muchon/assets/js/util.min.js?v=4201a626f8c9b614a663b3a1d7d82615"></script><script src="https://acrow.github.io/muchon/assets/js/main.min.js?v=56233c354bd814758be8bff42f7e13a5"></script><script>/*<![CDATA[*/var images=document.querySelectorAll("img[loading]");for(var i=0;i<images.length;i++){if(images[i].complete){images[i].classList.add("is-loaded")}else{images[i].addEventListener("load",function(){this.classList.add("is-loaded")},false)}};/*]]>*/</script></body></html>

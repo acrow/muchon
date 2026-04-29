@@ -1,0 +1,157 @@
+<!DOCTYPE html><html lang="zh-cn"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"><title>木憧的nginx配置 - 木憧科技</title><meta name="description" content="# You may add here your # server { #	... # } # statements for each of your virtual hosts to this file&hellip;"><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="canonical" href="https://acrow.github.io/muchon/mu-chong-de-nginxpei-zhi.html"><link rel="alternate" type="application/atom+xml" href="https://acrow.github.io/muchon/feed.xml" title="木憧科技 - RSS"><link rel="alternate" type="application/json" href="https://acrow.github.io/muchon/feed.json" title="木憧科技 - JSON"><meta property="og:title" content="木憧的nginx配置"><meta property="og:image" content="https://acrow.github.io/muchon/media/website/logo-3.png"><meta property="og:image:width" content="110"><meta property="og:image:height" content="110"><meta property="og:site_name" content="木憧科技"><meta property="og:description" content="# You may add here your # server { #	... # } # statements for each of your virtual hosts to this file&hellip;"><meta property="og:url" content="https://acrow.github.io/muchon/mu-chong-de-nginxpei-zhi.html"><meta property="og:type" content="article"><link rel="stylesheet" href="https://acrow.github.io/muchon/assets/css/fontawesome-all.min.css?v=85514f933f9e0b82460af63f1a403fa5"><link rel="stylesheet" href="https://acrow.github.io/muchon/assets/css/style.css?v=6d92336350d5374cc2b2fb5720b76be5"><noscript><link rel="stylesheet" href="https://acrow.github.io/muchon/assets/css/noscript.css?v=efa867a99f5064d6729e4dc2008ad50b"></noscript><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://acrow.github.io/muchon/mu-chong-de-nginxpei-zhi.html"},"headline":"木憧的nginx配置","datePublished":"2019-04-28T18:45+09:00","dateModified":"2026-04-29T15:32+09:00","image":{"@type":"ImageObject","url":"https://acrow.github.io/muchon/media/website/logo-3.png","height":110,"width":110},"description":"# You may add here your # server { #\t... # } # statements for each of your virtual hosts to this file&hellip;","author":{"@type":"Person","name":"北京木憧科技有限公司","url":"https://acrow.github.io/muchon/authors/bei-jing-mu-chong-ke-ji-you-xian-gong-si/"},"publisher":{"@type":"Organization","name":"北京木憧科技有限公司","logo":{"@type":"ImageObject","url":"https://acrow.github.io/muchon/media/website/logo-3.png","height":110,"width":110}}}</script><style>#wrapper > .bg {
+               background-image: url(https://acrow.github.io/muchon/assets/images/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(https://acrow.github.io/muchon/media/website/coding-1853305_1920.jpg);
+           }</style><noscript><style>img[loading] {
+                    opacity: 1;
+                }</style></noscript></head><body class="is-preload post-template"><div id="wrapper"><header id="header"><a class="logo logo-image" href="https://acrow.github.io/muchon/"><img src="https://acrow.github.io/muchon/media/website/logo-3.png" alt="木憧科技" width="110" height="110"></a></header><main id="main"><article class="post"><header class="major"><time datetime="2019-04-28T18:45" class="date">四月 28, 2019</time><h1>木憧的nginx配置</h1><p class="post__inner"></p></header><div class="post__inner post__entry"><pre class="wp-block-code"><code># You may add here your
+# server {
+#	...
+# }
+# statements for each of your virtual hosts to this file
+
+##
+# You should look at the following URL's in order to grasp a solid understanding
+# of Nginx configuration files in order to fully unleash the power of Nginx.
+# https://wiki.nginx.org/Pitfalls
+# https://wiki.nginx.org/QuickStart
+# https://wiki.nginx.org/Configuration
+#
+# Generally, you will want to move this file somewhere, and start with a clean
+# file but keep this around for reference. Or just disable in sites-enabled.
+#
+# Please see /usr/share/doc/nginx-doc/examples/ for more detailed examples.
+#
+server {
+	listen 80 default;
+	server_name _;
+	return 404;
+}
+
+server {
+	listen 80;
+	server_name www.muchon.cn;
+	location / {
+		proxy_pass https://127.0.0.1:3080;
+		proxy_set_header Host $host;
+		client_max_body_size 5m;
+	}
+}
+server {
+	listen 80;
+	server_name laiyd.muchon.cn;
+	location / {
+		proxy_pass https://127.0.0.1:3001;
+	}
+}
+server {
+	listen 80;
+	server_name blog.muchon.cn;
+	location / {
+		proxy_pass https://127.0.0.1:3000;
+		proxy_redirect off;
+		proxy_set_header Host $host;
+		proxy_set_header X-Real_IP $remote_addr;
+	}
+}
+server {
+	listen 80;
+	server_name test.muchon.cn;
+	location / {
+	#	proxy_pass https://xcrow.gicp.net:18380;	
+		proxy_pass https://127.0.0.1:4000;
+	}
+
+}
+server {
+	listen 80 ;
+	listen [::]:80 ipv6only=on;
+
+	root /usr/share/nginx/html;
+	index index.html index.htm;
+
+	# Make site accessible from https://localhost/
+	server_name localhost;
+
+	location / {
+		# First attempt to serve request as file, then
+		# as directory, then fall back to displaying a 404.
+		try_files $uri $uri/ =404;
+		# Uncomment to enable naxsi on this location
+		# include /etc/nginx/naxsi.rules
+	}
+
+	# Only for nginx-naxsi used with nginx-naxsi-ui : process denied requests
+	#location /RequestDenied {
+	#	proxy_pass https://127.0.0.1:8080;    
+	#}
+
+	#error_page 404 /404.html;
+
+	# redirect server error pages to the static page /50x.html
+	#
+	#error_page 500 502 503 504 /50x.html;
+	#location = /50x.html {
+	#	root /usr/share/nginx/html;
+	#}
+
+	# pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
+	#
+	#location ~ \.php$ {
+	#	fastcgi_split_path_info ^(.+\.php)(/.+)$;
+	#	# NOTE: You should have "cgi.fix_pathinfo = 0;" in php.ini
+	#
+	#	# With php5-cgi alone:
+	#	fastcgi_pass 127.0.0.1:9000;
+	#	# With php5-fpm:
+	#	fastcgi_pass unix:/var/run/php5-fpm.sock;
+	#	fastcgi_index index.php;
+	#	include fastcgi_params;
+	#}
+
+	# deny access to .htaccess files, if Apache's document root
+	# concurs with nginx's one
+	#
+	#location ~ /\.ht {
+	#	deny all;
+	#}
+}
+
+
+# another virtual host using mix of IP-, name-, and port-based configuration
+#
+#server {
+#	listen 8000;
+#	listen somename:8080;
+#	server_name somename alias another.alias;
+#	root html;
+#	index index.html index.htm;
+#
+#	location / {
+#		try_files $uri $uri/ =404;
+#	}
+#}
+
+
+# HTTPS server
+
+server {
+	listen 443;
+	server_name laiyd.muchon.cn;
+
+	root html;
+	index index.html index.htm;
+
+	ssl on;
+	ssl_certificate /etc/ssl/laiyd/1215308_laiyd.muchon.cn.pem;
+	ssl_certificate_key /etc/ssl/laiyd/1215308_laiyd.muchon.cn.key;
+
+	ssl_session_timeout 5m;
+
+	ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+	ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+	ssl_prefer_server_ciphers on;
+
+	location / {
+		proxy_pass https://127.0.0.1:3001;
+	}
+}
+</code></pre></div><footer class="post__inner post__footer"><p class="post__last-updated">This article was updated on 四月 29, 2026</p><div class="post__share-tag-container"><div class="post__share"><button class="post__share-button js-post__share-button icon" aria-label="Share button"><i class="fas fa-share-alt"></i></button><div class="post__share-popup js-post__share-popup"></div></div></div><div class="post__bio"><div><h3><a href="https://acrow.github.io/muchon/authors/bei-jing-mu-chong-ke-ji-you-xian-gong-si/" class="invert" rel="author">北京木憧科技有限公司</a></h3></div></div></footer></article></main><footer id="copyright"><ul><li><a href="mailto:master@muchon.cn">master@muchon.cn</a></li><li>© 2026 北京木憧科技有限公司</li><li><a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow noopener">京ICP备16010932号</a></li></ul></footer></div><script src="https://acrow.github.io/muchon/assets/js/jquery.min.js?v=c9771cc3e90e18f5336eedbd0fffb2cf"></script><script src="https://acrow.github.io/muchon/assets/js/jquery.scrollex.min.js?v=f89065e3d988006af9791b44561d7c90"></script><script src="https://acrow.github.io/muchon/assets/js/jquery.scrolly.min.js?v=1ed5a78bde1476875a40f6b9ff44fc14"></script><script src="https://acrow.github.io/muchon/assets/js/browser.min.js?v=c07298dd19048a8a69ad97e754dfe8d0"></script><script src="https://acrow.github.io/muchon/assets/js/breakpoints.min.js?v=81a479eb099e3b187613943b085923b8"></script><script src="https://acrow.github.io/muchon/assets/js/util.min.js?v=4201a626f8c9b614a663b3a1d7d82615"></script><script src="https://acrow.github.io/muchon/assets/js/main.min.js?v=56233c354bd814758be8bff42f7e13a5"></script><script>/*<![CDATA[*/var images=document.querySelectorAll("img[loading]");for(var i=0;i<images.length;i++){if(images[i].complete){images[i].classList.add("is-loaded")}else{images[i].addEventListener("load",function(){this.classList.add("is-loaded")},false)}};/*]]>*/</script></body></html>
