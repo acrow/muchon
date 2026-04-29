@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+    <title>木憧科技</title>
+    <link href="https://acrow.github.io/muchon/feed.xml" rel="self" />
+    <link href="https://acrow.github.io/muchon" />
+    <updated>1970-01-01T09:00:00+09:00</updated>
+    <author>
+        <name>北京木憧科技有限公司</name>
+    </author>
+    <id>https://acrow.github.io/muchon</id>
+
+</feed>
