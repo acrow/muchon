@@ -3,7 +3,7 @@
     <title>木憧科技</title>
     <link href="https://acrow.github.io/muchon/feed.xml" rel="self" />
     <link href="https://acrow.github.io/muchon" />
-    <updated>2026-04-29T23:04:47+09:00</updated>
+    <updated>2026-04-29T23:07:34+09:00</updated>
     <author>
         <name>北京木憧科技有限公司</name>
     </author>
@@ -101,18 +101,15 @@
         </author>
         <link href="https://acrow.github.io/muchon/guan-yu-staticpress2019-de-cuo-wu-chu-li.html"/>
         <id>https://acrow.github.io/muchon/guan-yu-staticpress2019-de-cuo-wu-chu-li.html</id>
-        <media:content url="https://acrow.github.io/muchon/media/posts/23/GqF1pq_bMAALjtL.jpg" medium="image" />
 
         <updated>2021-02-09T01:01:10+09:00</updated>
             <summary type="html">
                 <![CDATA[
-                        <img src="https://acrow.github.io/muchon/media/posts/23/GqF1pq_bMAALjtL.jpg" alt="" />
                     客户wordpress网站要求实现全站静态化，我们经过调查选择了 staticpress2019 这个插件。实验阶段这个插件表现完美，生成的静态网站表现和动态完全一样。 然而去客户处部署后，发现出了问题：静态网站首页生成正常，但是打开文章报错，更具体是打开包含图片或视频的文章报错，纯文本的没事。 开始以为是媒体文件名称含中文的原因，可是改成拼音后，生成的静态网站依然报错。 仔细分析生成的静态文件，发现很多html被生成成了文件夹，而不是文件。文件夹内部是图片的网页文件。所以浏览器访问这个html时候，实际是访问服务器上面的文件夹，而此文件夹内没有 index.html 导致直接报错403 Forbiden。 查数据，看网站后台，调查很久，终于想通了原因。首先发现媒体库中的每个媒体也都有固定链接，而这些固定链接不知道为什么是其引用文章后面的链接。例如，文章 123.html 中包括图片 xyz.jpg，那么 xyz 这个媒体文件的固定链接就是 域名/123.html/xyz 。而观察 staticpress2019 生成静态文件时候的 log，它是先生成的媒体的固定链接，在生成文件的固定链接。导致 /123.html/ 提前被生成了目录，而后再生成 123.tml&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="https://acrow.github.io/muchon/media/posts/23/GqF1pq_bMAALjtL.jpg" class="type:primaryImage" alt="" /></p>
                 <!-- wp:paragraph -->
 <p>客户wordpress网站要求实现全站静态化，我们经过调查选择了 staticpress2019 这个插件。实验阶段这个插件表现完美，生成的静态网站表现和动态完全一样。</p>
 <!-- /wp:paragraph -->
