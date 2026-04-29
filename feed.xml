@@ -3,7 +3,7 @@
     <title>木憧科技</title>
     <link href="https://acrow.github.io/muchon/feed.xml" rel="self" />
     <link href="https://acrow.github.io/muchon" />
-    <updated>2026-04-29T16:17:21+09:00</updated>
+    <updated>2026-04-29T23:04:47+09:00</updated>
     <author>
         <name>北京木憧科技有限公司</name>
     </author>
@@ -16,20 +16,17 @@
         </author>
         <link href="https://acrow.github.io/muchon/win10win11-lian-jie-l2tpshi-bai.html"/>
         <id>https://acrow.github.io/muchon/win10win11-lian-jie-l2tpshi-bai.html</id>
-        <media:content url="https://acrow.github.io/muchon/media/posts/25/Gx3HaYwWwAAl3Sg.jpg" medium="image" />
             <category term="VPN"/>
             <category term="L2TP"/>
 
         <updated>2022-11-06T00:23:33+09:00</updated>
             <summary type="html">
                 <![CDATA[
-                        <img src="https://acrow.github.io/muchon/media/posts/25/Gx3HaYwWwAAl3Sg.jpg" alt="" />
                     连接属性设置 检查服务是否 启动注册表设置 查找HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RasMan\Parameters 新建 DWORD，名称设置为 ProhibitIPSec （注意中间 IP 的 P 是大写），值设置为 0 设置 AllowL2TPWeakCrypto 值为 1 查找 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PolicyAgent 设置 AssumeUDPEncapsulationContextOnSendRule 的值为 2&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="https://acrow.github.io/muchon/media/posts/25/Gx3HaYwWwAAl3Sg.jpg" class="type:primaryImage" alt="" /></p>
                 <!-- wp:list -->
 <ul>
 <li>
@@ -66,18 +63,15 @@
         </author>
         <link href="https://acrow.github.io/muchon/spoonshu-ju-zhuan-yi-chu-xian-unable-to-get-database-metadata-from-this-database-connection.html"/>
         <id>https://acrow.github.io/muchon/spoonshu-ju-zhuan-yi-chu-xian-unable-to-get-database-metadata-from-this-database-connection.html</id>
-        <media:content url="https://acrow.github.io/muchon/media/posts/24/Gt5psriW4AEUHzI.jpg" medium="image" />
 
         <updated>2021-12-13T19:49:43+09:00</updated>
             <summary type="html">
                 <![CDATA[
-                        <img src="https://acrow.github.io/muchon/media/posts/24/Gt5psriW4AEUHzI.jpg" alt="" />
                     直接说我们的解决方案，可能和你们遇到的不同。 我们这里报的是某个字段不能为空，但是日志页签那里报的错误就是 Unable to get database metadata ... 所以，根据报错，给相关字段设置个默认值，再次执行就通过了！
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="https://acrow.github.io/muchon/media/posts/24/Gt5psriW4AEUHzI.jpg" class="type:primaryImage" alt="" /></p>
                 <!-- wp:paragraph -->
 <p>直接说我们的解决方案，可能和你们遇到的不同。</p>
 <!-- /wp:paragraph -->
@@ -158,18 +152,15 @@
         </author>
         <link href="https://acrow.github.io/muchon/yong-chrome-da-kai-ie.html"/>
         <id>https://acrow.github.io/muchon/yong-chrome-da-kai-ie.html</id>
-        <media:content url="https://acrow.github.io/muchon/media/posts/22/GwTcEcDXAAAH5Yt.jpg" medium="image" />
 
         <updated>2020-05-15T01:16:40+09:00</updated>
             <summary type="html">
                 <![CDATA[
-                        <img src="https://acrow.github.io/muchon/media/posts/22/GwTcEcDXAAAH5Yt.jpg" alt="" />
                     给Chrome安装 IE Tab 插件，安装后还要安装 ietabhelper 然后才可以真正的用Chrome 使用 IE 内核打开网页。 不过由于国内无法使用谷歌商店，所以并不能直接通过浏览器安装插件。当然你可以科学上网，不过有些时候工作环境禁止访问互联网，因此只好下载插件手工安装了。 如果你在win10下用的最新版本的Chrome，会发现从网上下载的插件虽然安装成功了，但是 ietabhelper 无法安装。 这是因为版本的原因。 网上大部分插件都是10.5.1版，与最新版Chrome不兼容。 目前的最新版本是13.1.7.1 下面的附件即为该版本，并且压缩包内已经包含 ietabhelper安装包。 具体安装方法：
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="https://acrow.github.io/muchon/media/posts/22/GwTcEcDXAAAH5Yt.jpg" class="type:primaryImage" alt="" /></p>
                 <!-- wp:paragraph -->
 <p>给Chrome安装 IE Tab 插件，安装后还要安装 ietabhelper 然后才可以真正的用Chrome 使用 IE 内核打开网页。</p>
 <!-- /wp:paragraph -->
@@ -230,18 +221,15 @@
         </author>
         <link href="https://acrow.github.io/muchon/phpkai-qi-curl.html"/>
         <id>https://acrow.github.io/muchon/phpkai-qi-curl.html</id>
-        <media:content url="https://acrow.github.io/muchon/media/posts/21/Gvpz5pXXwAAwsEb.jpg" medium="image" />
 
         <updated>2020-04-27T01:50:31+09:00</updated>
             <summary type="html">
                 <![CDATA[
-                        <img src="https://acrow.github.io/muchon/media/posts/21/Gvpz5pXXwAAwsEb.jpg" alt="" />
                     配置改完了不管用，解决方案是：把 PhP 根目录的 libssh2.dll 拷贝到 Apache 的 bin 目录下，再重启 Apache。
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="https://acrow.github.io/muchon/media/posts/21/Gvpz5pXXwAAwsEb.jpg" class="type:primaryImage" alt="" /></p>
                 <!-- wp:paragraph -->
 <p>配置改完了不管用，解决方案是：把 PhP 根目录的 libssh2.dll 拷贝到 Apache 的 bin 目录下，再重启 Apache。</p>
 <!-- /wp:paragraph -->
@@ -255,19 +243,16 @@
         </author>
         <link href="https://acrow.github.io/muchon/vue-shuang-xiang-shu-ju-tong-bu.html"/>
         <id>https://acrow.github.io/muchon/vue-shuang-xiang-shu-ju-tong-bu.html</id>
-        <media:content url="https://acrow.github.io/muchon/media/posts/20/Gv0uChtWgAAgw93.jpg" medium="image" />
             <category term="VUE"/>
 
         <updated>2020-01-23T00:53:08+09:00</updated>
             <summary type="html">
                 <![CDATA[
-                        <img src="https://acrow.github.io/muchon/media/posts/20/Gv0uChtWgAAgw93.jpg" alt="" />
                     vue报错： void mutating a prop directly since the value will be overwritten whenever the parent component re-renders.Instead, use a data or computed property&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="https://acrow.github.io/muchon/media/posts/20/Gv0uChtWgAAgw93.jpg" class="type:primaryImage" alt="" /></p>
                 <!-- wp:paragraph -->
 <p>vue报错：</p>
 <!-- /wp:paragraph -->
@@ -350,18 +335,15 @@ export default {
         </author>
         <link href="https://acrow.github.io/muchon/postman-da-bu-kai-liao.html"/>
         <id>https://acrow.github.io/muchon/postman-da-bu-kai-liao.html</id>
-        <media:content url="https://acrow.github.io/muchon/media/posts/18/GwEpCdtWUAY1d9h.jpg" medium="image" />
 
         <updated>2019-10-10T10:03:04+09:00</updated>
             <summary type="html">
                 <![CDATA[
-                        <img src="https://acrow.github.io/muchon/media/posts/18/GwEpCdtWUAY1d9h.jpg" alt="" />
                     打开时报错 “Could not open Postman”， 重新安装还是报 。请按照下面方法处理： 1.卸载postma 2.删除下面两个目录 3.重新安装postman
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="https://acrow.github.io/muchon/media/posts/18/GwEpCdtWUAY1d9h.jpg" class="type:primaryImage" alt="" /></p>
                 <!-- wp:paragraph -->
 <p>打开时报错 “Could not open Postman”， 重新安装还是报 。请按照下面方法处理：</p>
 <!-- /wp:paragraph -->
@@ -398,18 +380,15 @@ export default {
         </author>
         <link href="https://acrow.github.io/muchon/guan-yu-nginxpei-zhi-bu-qi-zuo-yong.html"/>
         <id>https://acrow.github.io/muchon/guan-yu-nginxpei-zhi-bu-qi-zuo-yong.html</id>
-        <media:content url="https://acrow.github.io/muchon/media/posts/17/ec9932e6-2929-462a-a320-11d0906b6293.jpg" medium="image" />
 
         <updated>2019-08-23T22:44:17+09:00</updated>
             <summary type="html">
                 <![CDATA[
-                        <img src="https://acrow.github.io/muchon/media/posts/17/ec9932e6-2929-462a-a320-11d0906b6293.jpg" alt="" />
                     现在阿里云的免费https证书好麻烦。以前很简单的就能申请到。现在要先通过云盾证书服务购买，虽然是免费的也得走个购买流程。买了之后再申请，申请之前要先验证，证明这个域名是你的，要求你把它一个文件放在你域名后面某个固定地址。 一开始我想，这还不简单，建个目录不就OK了。结果发现网站在windows上，阿里云给的这个固定地址是.打头的，windows目录名禁止用.打头。 那好吧，那我直接用nginx配置一下，把这个固定地址映射到某个目录，文件放目录里不就OK了。结果折腾了快一天，才算搞定了。 nginx确实也玩的不熟练，查资料看上去很简单嘛， location 配置。但是改完配置，这个路径始终就是404。怎么都出不来。 后来发现我用的是root，这个root的话，相当于目录是根，还是要在目录里面建目录的。应该用alais，赶紧改。然而，没什么屌用，依然404。要崩溃了啊，nginx的配置太难了。 这期间还怀疑是不是版本问题，安装了nginx的新版本。问题依旧。 直到最后我终于搞清了原因。可能大家也猜到了。原来nginx根本没有真正退出，所以之前的配置一直有效。原来的nginx目录下有两个批处理文件stop.bat和restart.bat，问题就在这两个身上。有时候能退出干净，有时候退不干净。导致旧的进程和新的进程可能同时存在。知道我后来发现任务管理器里面竟然有8个nginx进程。全停止了，再启动，发现配置生效了。 实时上根本不需要这么做，因为直接在阿里云域名解析那里添加text类型的子域名就行了。(((φ(◎ロ◎;)φ))) 记录一下这个弱智的经历，希望下回别再犯同样的错误！
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="https://acrow.github.io/muchon/media/posts/17/ec9932e6-2929-462a-a320-11d0906b6293.jpg" class="type:primaryImage" alt="" /></p>
                 <!-- wp:paragraph -->
 <p>现在阿里云的免费https证书好麻烦。以前很简单的就能申请到。现在要先通过云盾证书服务购买，虽然是免费的也得走个购买流程。买了之后再申请，申请之前要先验证，证明这个域名是你的，要求你把它一个文件放在你域名后面某个固定地址。</p>
 <!-- /wp:paragraph -->
@@ -452,18 +431,15 @@ export default {
         </author>
         <link href="https://acrow.github.io/muchon/ji-lu-yi-ci-wordpressqian-yi-guo-cheng.html"/>
         <id>https://acrow.github.io/muchon/ji-lu-yi-ci-wordpressqian-yi-guo-cheng.html</id>
-        <media:content url="https://acrow.github.io/muchon/media/posts/16/GmxV9IXbEAA8DzY.jpg" medium="image" />
 
         <updated>2019-08-23T22:15:25+09:00</updated>
             <summary type="html">
                 <![CDATA[
-                        <img src="https://acrow.github.io/muchon/media/posts/16/GmxV9IXbEAA8DzY.jpg" alt="" />
                     迁移前的wordpress是用docker部署的，迁移后要放在windows的Pc机上 docker exec -it 容器名 mysqldump -u用户名 -p密码 数据库名 &gt;./db.sql mysql -u用户名 -p密码 use wordpress source d:/dbsql 下载和安装新的wordpress，不是必须的。我是因为把旧的wordpress部署后，怎么都连不上数据库。所以安装新的对比了一下 wp_config.php。原来是因为host不正确。之前是docker部署的所以这里需要把host从db:3306改为localhost。
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="https://acrow.github.io/muchon/media/posts/16/GmxV9IXbEAA8DzY.jpg" class="type:primaryImage" alt="" /></p>
                 <!-- wp:paragraph -->
 <p>迁移前的wordpress是用docker部署的，迁移后要放在windows的Pc机上</p>
 <!-- /wp:paragraph -->
@@ -515,18 +491,15 @@ source d:/dbsql</code></pre>
         </author>
         <link href="https://acrow.github.io/muchon/wordpress-xiang-dui-lu-jing.html"/>
         <id>https://acrow.github.io/muchon/wordpress-xiang-dui-lu-jing.html</id>
-        <media:content url="https://acrow.github.io/muchon/media/posts/15/GztX-SyXwAAA_8Q.jpg" medium="image" />
 
         <updated>2019-08-23T16:37:33+09:00</updated>
             <summary type="html">
                 <![CDATA[
-                        <img src="https://acrow.github.io/muchon/media/posts/15/GztX-SyXwAAA_8Q.jpg" alt="" />
                     在根目录下的wp_config.php最后追加下面内容 $home = 'https://'.$_SERVER['HTTP_HOST']; $siteurl = 'https://'.$_SERVER['HTTP_HOST']; define('WP_HOME', $home); define('WP_SITEURL', $siteurl); 这样修改完了，图片之类的静态文件不受影响，需要的话要手工将静态文件路径改为相对路径。
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="https://acrow.github.io/muchon/media/posts/15/GztX-SyXwAAA_8Q.jpg" class="type:primaryImage" alt="" /></p>
                 <!-- wp:paragraph -->
 <p>在根目录下的wp_config.php最后追加下面内容</p>
 <!-- /wp:paragraph -->
