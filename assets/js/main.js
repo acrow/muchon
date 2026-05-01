@@ -1,12 +1,12 @@
-/*
-	Massively by HTML5 UP
+﻿/*
+	Muchon by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-(function($) {
+(function ($) {
 
-	var	$window = $(window),
+	var $window = $(window),
 		$body = $('body'),
 		$wrapper = $('#wrapper'),
 		$header = $('#header'),
@@ -15,23 +15,23 @@
 		$navPanelToggle, $navPanel, $navPanelInner;
 
 	// Breakpoints.
-		breakpoints({
-			default:   ['1681px',   null       ],
-			xlarge:    ['1281px',   '1680px'   ],
-			large:     ['981px',    '1280px'   ],
-			medium:    ['737px',    '980px'    ],
-			small:     ['481px',    '736px'    ],
-			xsmall:    ['361px',    '480px'    ],
-			xxsmall:   [null,       '360px'    ]
-		});
+	breakpoints({
+		default: ['1681px', null],
+		xlarge: ['1281px', '1680px'],
+		large: ['981px', '1280px'],
+		medium: ['737px', '980px'],
+		small: ['481px', '736px'],
+		xsmall: ['361px', '480px'],
+		xxsmall: [null, '360px']
+	});
 
 	/**
 	 * Applies parallax scrolling to an element's background image.
 	 * @return {jQuery} jQuery object.
 	 */
-	$.fn._parallax = function(intensity) {
+	$.fn._parallax = function (intensity) {
 
-		var	$window = $(window),
+		var $window = $(window),
 			$this = $(this);
 
 		if (this.length == 0 || intensity === 0)
@@ -39,7 +39,7 @@
 
 		if (this.length > 1) {
 
-			for (var i=0; i < this.length; i++)
+			for (var i = 0; i < this.length; i++)
 				$(this[i])._parallax(intensity);
 
 			return $this;
@@ -49,20 +49,20 @@
 		if (!intensity)
 			intensity = 0.25;
 
-		$this.each(function() {
+		$this.each(function () {
 
 			var $t = $(this),
 				$bg = $('<div class="bg"></div>').appendTo($t),
 				on, off;
 
-			on = function() {
+			on = function () {
 
 				$bg
 					.removeClass('fixed')
 					.css('transform', 'matrix(1,0,0,1,0,0)');
 
 				$window
-					.on('scroll._parallax', function() {
+					.on('scroll._parallax', function () {
 
 						var pos = parseInt($window.scrollTop()) - parseInt($t.position().top);
 
@@ -72,7 +72,7 @@
 
 			};
 
-			off = function() {
+			off = function () {
 
 				$bg
 					.addClass('fixed')
@@ -84,25 +84,25 @@
 			};
 
 			// Disable parallax on ..
-				if (browser.name == 'ie'			// IE
-				||	browser.name == 'edge'			// Edge
-				||	window.devicePixelRatio > 1		// Retina/HiDPI (= poor performance)
-				||	browser.mobile)					// Mobile devices
-					off();
+			if (browser.name == 'ie'			// IE
+				|| browser.name == 'edge'			// Edge
+				|| window.devicePixelRatio > 1		// Retina/HiDPI (= poor performance)
+				|| browser.mobile)					// Mobile devices
+				off();
 
 			// Enable everywhere else.
-				else {
+			else {
 
-					breakpoints.on('>large', on);
-					breakpoints.on('<=large', off);
+				breakpoints.on('>large', on);
+				breakpoints.on('<=large', off);
 
-				}
+			}
 
 		});
 
 		$window
 			.off('load._parallax resize._parallax')
-			.on('load._parallax resize._parallax', function() {
+			.on('load._parallax resize._parallax', function () {
 				$window.trigger('scroll');
 			});
 
@@ -111,149 +111,149 @@
 	};
 
 	// Play initial animations on page load.
-		$window.on('load', function() {
-			window.setTimeout(function() {
-				$body.removeClass('is-preload');
-			}, 100);
-		});
+	$window.on('load', function () {
+		window.setTimeout(function () {
+			$body.removeClass('is-preload');
+		}, 100);
+	});
 
 	// Scrolly.
-		$('.scrolly').scrolly();
+	$('.scrolly').scrolly();
 
 	// Background.
-		$wrapper._parallax(0.925);
+	$wrapper._parallax(0.925);
 
 	// Nav Panel.
 
-		// Toggle.
-			$navPanelToggle = $(
-				'<a href="#navPanel" id="navPanelToggle">Menu</a>'
-			)
-				.appendTo($wrapper);
+	// Toggle.
+	$navPanelToggle = $(
+		'<a href="#navPanel" id="navPanelToggle">Menu</a>'
+	)
+		.appendTo($wrapper);
 
-			// Change toggle styling once we've scrolled past the header.
-				$header.scrollex({
-					bottom: '5vh',
-					enter: function() {
-						$navPanelToggle.removeClass('alt');
-					},
-					leave: function() {
-						$navPanelToggle.addClass('alt');
-					}
-				});
+	// Change toggle styling once we've scrolled past the header.
+	$header.scrollex({
+		bottom: '5vh',
+		enter: function () {
+			$navPanelToggle.removeClass('alt');
+		},
+		leave: function () {
+			$navPanelToggle.addClass('alt');
+		}
+	});
 
-		// Panel.
-			$navPanel = $(
-				'<div id="navPanel">' +
-					'<nav>' +
-					'</nav>' +
-					'<a href="#navPanel" class="close"></a>' +
-				'</div>'
-			)
-				.appendTo($body)
-				.panel({
-					delay: 500,
-					hideOnClick: true,
-					hideOnSwipe: true,
-					resetScroll: true,
-					resetForms: true,
-					side: 'right',
-					target: $body,
-					visibleClass: 'is-navPanel-visible'
-				});
+	// Panel.
+	$navPanel = $(
+		'<div id="navPanel">' +
+		'<nav>' +
+		'</nav>' +
+		'<a href="#navPanel" class="close"></a>' +
+		'</div>'
+	)
+		.appendTo($body)
+		.panel({
+			delay: 500,
+			hideOnClick: true,
+			hideOnSwipe: true,
+			resetScroll: true,
+			resetForms: true,
+			side: 'right',
+			target: $body,
+			visibleClass: 'is-navPanel-visible'
+		});
 
-			// Get inner.
-				$navPanelInner = $navPanel.children('nav');
+	// Get inner.
+	$navPanelInner = $navPanel.children('nav');
 
-			// Move nav content on breakpoint change.
-				var $navContent = $nav.children();
+	// Move nav content on breakpoint change.
+	var $navContent = $nav.children();
 
-				breakpoints.on('>medium', function() {
+	breakpoints.on('>medium', function () {
 
-					// NavPanel -> Nav.
-						$navContent.appendTo($nav);
+		// NavPanel -> Nav.
+		$navContent.appendTo($nav);
 
-					// Flip icon classes.
-						$nav.find('.icons, .icon')
-							.removeClass('alt');
+		// Flip icon classes.
+		$nav.find('.icons, .icon')
+			.removeClass('alt');
 
-				});
+	});
 
-				breakpoints.on('<=medium', function() {
+	breakpoints.on('<=medium', function () {
 
-					// Nav -> NavPanel.
-						$navContent.appendTo($navPanelInner);
+		// Nav -> NavPanel.
+		$navContent.appendTo($navPanelInner);
 
-					// Flip icon classes.
-						$navPanelInner.find('.icons, .icon')
-							.addClass('alt');
+		// Flip icon classes.
+		$navPanelInner.find('.icons, .icon')
+			.addClass('alt');
 
-				});
+	});
 
-			// Hack: Disable transitions on WP.
-				if (browser.os == 'wp'
-				&&	browser.osVersion < 10)
-					$navPanel
-						.css('transition', 'none');
+	// Hack: Disable transitions on WP.
+	if (browser.os == 'wp'
+		&& browser.osVersion < 10)
+		$navPanel
+			.css('transition', 'none');
 
 	// Intro.
-		var $intro = $('#intro');
+	var $intro = $('#intro');
 
-		if ($intro.length > 0) {
+	if ($intro.length > 0) {
 
-			// Hack: Fix flex min-height on IE.
-				if (browser.name == 'ie') {
-					$window.on('resize.ie-intro-fix', function() {
+		// Hack: Fix flex min-height on IE.
+		if (browser.name == 'ie') {
+			$window.on('resize.ie-intro-fix', function () {
 
-						var h = $intro.height();
+				var h = $intro.height();
 
-						if (h > $window.height())
-							$intro.css('height', 'auto');
-						else
-							$intro.css('height', h);
+				if (h > $window.height())
+					$intro.css('height', 'auto');
+				else
+					$intro.css('height', h);
 
-					}).trigger('resize.ie-intro-fix');
+			}).trigger('resize.ie-intro-fix');
+		}
+
+		// Hide intro on scroll (> small).
+		breakpoints.on('>small', function () {
+
+			$main.unscrollex();
+
+			$main.scrollex({
+				mode: 'bottom',
+				top: '25vh',
+				bottom: '-50vh',
+				enter: function () {
+					$intro.addClass('hidden');
+				},
+				leave: function () {
+					$intro.removeClass('hidden');
 				}
-
-			// Hide intro on scroll (> small).
-				breakpoints.on('>small', function() {
-
-					$main.unscrollex();
-
-					$main.scrollex({
-						mode: 'bottom',
-						top: '25vh',
-						bottom: '-50vh',
-						enter: function() {
-							$intro.addClass('hidden');
-						},
-						leave: function() {
-							$intro.removeClass('hidden');
-						}
-					});
-
-				});
-
-			// Hide intro on scroll (<= small).
-				breakpoints.on('<=small', function() {
-
-					$main.unscrollex();
-
-					$main.scrollex({
-						mode: 'middle',
-						top: '15vh',
-						bottom: '-15vh',
-						enter: function() {
-							$intro.addClass('hidden');
-						},
-						leave: function() {
-							$intro.removeClass('hidden');
-						}
-					});
-
 			});
 
-		}
+		});
+
+		// Hide intro on scroll (<= small).
+		breakpoints.on('<=small', function () {
+
+			$main.unscrollex();
+
+			$main.scrollex({
+				mode: 'middle',
+				top: '15vh',
+				bottom: '-15vh',
+				enter: function () {
+					$intro.addClass('hidden');
+				},
+				leave: function () {
+					$intro.removeClass('hidden');
+				}
+			});
+
+		});
+
+	}
 
 })(jQuery);
 
@@ -266,56 +266,56 @@
 	let sharePopup = document.querySelector('.js-post__share-popup');
 
 	if (shareButton) {
-		 sharePopup.addEventListener('click', function (e) {
-			  e.stopPropagation();
-		 });
+		sharePopup.addEventListener('click', function (e) {
+			e.stopPropagation();
+		});
 
-		 shareButton.addEventListener('click', function (e) {
-			  e.preventDefault();
-			  e.stopPropagation();
-			  sharePopup.classList.toggle('is-visible');
-		 });
+		shareButton.addEventListener('click', function (e) {
+			e.preventDefault();
+			e.stopPropagation();
+			sharePopup.classList.toggle('is-visible');
+		});
 
-		 document.body.addEventListener('click', function () {
-			  sharePopup.classList.remove('is-visible');
-		 });
+		document.body.addEventListener('click', function () {
+			sharePopup.classList.remove('is-visible');
+		});
 	}
 
 	// link selector and pop-up window size
 	var Config = {
-		 Link: ".js-share",
-		 Width: 500,
-		 Height: 500
+		Link: ".js-share",
+		Width: 500,
+		Height: 500
 	};
 	// add handler links
 	var slink = document.querySelectorAll(Config.Link);
 	for (var a = 0; a < slink.length; a++) {
-		 slink[a].onclick = PopupHandler;
+		slink[a].onclick = PopupHandler;
 	}
 	// create popup
 	function PopupHandler(e) {
-		 e = (e ? e : window.event);
-		 var t = (e.target ? e.target : e.srcElement);
-		 // hide share popup
-		 if (sharePopup) {
-			  sharePopup.classList.remove('is-visible');
-		 }
-		 // popup position
-		 var px = Math.floor(((screen.availWidth || 1024) - Config.Width) / 2),
-			  py = Math.floor(((screen.availHeight || 700) - Config.Height) / 2);
-		 // open popup
-		 var link_href = t.href ? t.href : t.parentNode.href;
-		 var popup = window.open(link_href, "social",
-			  "width=" + Config.Width + ",height=" + Config.Height +
-			  ",left=" + px + ",top=" + py +
-			  ",location=0,menubar=0,toolbar=0,status=0,scrollbars=1,resizable=1");
-		 if (popup) {
-			  popup.focus();
-			  if (e.preventDefault) e.preventDefault();
-			  e.returnValue = false;
-		 }
+		e = (e ? e : window.event);
+		var t = (e.target ? e.target : e.srcElement);
+		// hide share popup
+		if (sharePopup) {
+			sharePopup.classList.remove('is-visible');
+		}
+		// popup position
+		var px = Math.floor(((screen.availWidth || 1024) - Config.Width) / 2),
+			py = Math.floor(((screen.availHeight || 700) - Config.Height) / 2);
+		// open popup
+		var link_href = t.href ? t.href : t.parentNode.href;
+		var popup = window.open(link_href, "social",
+			"width=" + Config.Width + ",height=" + Config.Height +
+			",left=" + px + ",top=" + py +
+			",location=0,menubar=0,toolbar=0,status=0,scrollbars=1,resizable=1");
+		if (popup) {
+			popup.focus();
+			if (e.preventDefault) e.preventDefault();
+			e.returnValue = false;
+		}
 
-		 return !!popup;
+		return !!popup;
 	}
 })();
 
@@ -330,9 +330,9 @@
 			continue;
 		}
 
-        if (embed.getAttribute('data-responsive') === 'false') {
-            continue;
-        }
+		if (embed.getAttribute('data-responsive') === 'false') {
+			continue;
+		}
 
 		let w = embed.getAttribute('width');
 		let h = embed.getAttribute('height');
@@ -341,7 +341,7 @@
 		if (!w || !h) {
 			continue;
 		}
-		
+
 		if (w.indexOf('%') > -1 && h.indexOf('%') > -1) { // percentage mode
 			w = parseFloat(w.replace('%', ''));
 			h = parseFloat(h.replace('%', ''));
@@ -357,4 +357,28 @@
 			wrappers[i].setAttribute('style', '--embed-aspect-ratio:' + ratioValue);
 		}
 	}
+})();
+// ========================================
+// 滚动触发 header 背景（内页专用）
+// 向下滚动 > 10px → 显示暗色背景
+// 回到顶部 → 恢复透明
+// ========================================
+(function () {
+	if (document.body.classList.contains('home-template')) return;
+
+	var header = document.getElementById('header');
+	if (!header) return;
+
+	var threshold = 10;
+
+	function onScroll() {
+		if (window.scrollY > threshold) {
+			header.classList.add('scrolled');
+		} else {
+			header.classList.remove('scrolled');
+		}
+	}
+
+	window.addEventListener('scroll', onScroll, { passive: true });
+	onScroll(); // 初始检查（防止刷新时已处于滚动位置）
 })();
