@@ -2,17 +2,17 @@
     "version": "https://jsonfeed.org/version/1",
     "title": "木憧科技",
     "description": "",
-    "home_page_url": "https://www.muchon.cn",
-    "feed_url": "https://www.muchon.cn/feed.json",
+    "home_page_url": "https://acrow.github.io/muchon",
+    "feed_url": "https://acrow.github.io/muchon/feed.json",
     "user_comment": "",
-    "icon": "https://www.muchon.cn/media/website/moon-6.png",
+    "icon": "https://acrow.github.io/muchon/media/website/moon-6.png",
     "author": {
         "name": "北京木憧科技有限公司"
     },
     "items": [
         {
-            "id": "https://www.muchon.cn/posts/yong-publii-ti-huan-wordpress.html",
-            "url": "https://www.muchon.cn/posts/yong-publii-ti-huan-wordpress.html",
+            "id": "https://acrow.github.io/muchon/posts/yong-publii-ti-huan-wordpress.html",
+            "url": "https://acrow.github.io/muchon/posts/yong-publii-ti-huan-wordpress.html",
             "title": "用 Publii 替换 Wordpress",
             "summary": "之前用 Docker 安装的 Wordpress， 动不动就崩溃了，特意做了定时自动重启，好像效果也不怎么样，终于下决心要解决这个问题了。 和 Chatgpt 咨询了一下，应该是因为 vps 配置太低，而 Docker 这一套方案太重了，内存不够时直接被系统 kill 掉了。和它讨论的结果，我决定采用 Publii 代替原来的方案。虽然线上变成了纯静态的网站，但这样资源占用极少，应该不会再频繁崩溃了。并且，我觉得对于国内大多数网站来说，静态可能是最合适的。因为只需要展示，不需要交互。既能避免不必要的麻烦，又能保证安全稳定。 Publii 是个桌面应用，在编辑完网站后，直接生成静态网页，推送到线上。后台管理界面和 Wordpress 很像，并且支持一键从 Wordpress 导入 ，这样之前的网页和文章都可以保留了。但是主题就要靠自己了。&hellip;",
             "content_html": "<p>之前用 Docker 安装的 Wordpress， 动不动就崩溃了，特意做了定时自动重启，好像效果也不怎么样，终于下决心要解决这个问题了。</p>\n<p>和 Chatgpt 咨询了一下，应该是因为 vps 配置太低，而 Docker 这一套方案太重了，内存不够时直接被系统 kill 掉了。和它讨论的结果，我决定采用 Publii 代替原来的方案。虽然线上变成了纯静态的网站，但这样资源占用极少，应该不会再频繁崩溃了。并且，我觉得对于国内大多数网站来说，静态可能是最合适的。因为只需要展示，不需要交互。既能避免不必要的麻烦，又能保证安全稳定。 </p>\n<p>Publii 是个桌面应用，在编辑完网站后，直接生成静态网页，推送到线上。后台管理界面和 Wordpress 很像，并且支持一键从 Wordpress 导入 ，这样之前的网页和文章都可以保留了。但是主题就要靠自己了。</p>\n<p>Publii 的介绍文章很多，我就不重复了。这里只记录几个我自己使用的经验。</p>\n<ul>\n<li>关于预览，我之前以为会自动打开浏览器，然而并没有。事实上在你的网站目录下会有 3 个目录： Input、Output、Preview。其中 Preview 就是在本地预览的专用目录，你可以直接打开这个目录下面的 Index.html 进行预览。在这个目录下生成的链接都是 file:/// 打头的本地目录地址。 而 Output 目录才是你要推送到线上的版本，并且预览阶段是不会生成的，只有你执行推送的时候才会生成。</li>\n<li>关于推送。可以配置多个 Server，可以选择不同类型的 Server。但是如果选择 Git 类型，其实并不是在本地生成 Git 库，每次 commit &amp; push。本地并没有 Git 库，并且每次推送貌似都是全量而不是增量。如果需要可以自己生成 Git 库，自己 commit、push。</li>\n<li>我不知道是因为我选择的主题的原因还是什么原因。当我添加菜单项，并选择跳转目的是 posts index 时，跳转的是 index（首页)。我自己在 input 里面加了 posts.hbs，在生成预览时，posts 目录确实生成了  posts/index.html，但是它使用的模板，依然是根目录的 index.hbs，并没有用我添加的 posts.hbs。所以不得不修改 index.hbs 用条件判断去生成我想要的 posts index 的样式。</li>\n<li>如果想让 Publii 显示你自定义的一些属性，可以在 Input/themes/你的主题/config.json 的 customConfig 部分添加，属性就会显示在 Publii 的主题自定义部分。</li>\n<li>Publii 有官方文档教你如何生成自己的主题。不过我是找了一个现成的，在它基础上，让 Claude 帮我修改的。开始是用的 Copilot ，不过还是放弃了。专业的事还得用专业的 AI。</li>\n<li>这次还顺便搞定了 Certbot ，不用每次手动更新证书了，AI 确实让我们解决问题的效率大幅提高。</li>\n</ul>",
@@ -25,8 +25,8 @@
             "date_modified": "2026-05-01T20:11:44+09:00"
         },
         {
-            "id": "https://www.muchon.cn/posts/win10win11-lian-jie-l2tpshi-bai.html",
-            "url": "https://www.muchon.cn/posts/win10win11-lian-jie-l2tpshi-bai.html",
+            "id": "https://acrow.github.io/muchon/posts/win10win11-lian-jie-l2tpshi-bai.html",
+            "url": "https://acrow.github.io/muchon/posts/win10win11-lian-jie-l2tpshi-bai.html",
             "title": "Windows 连接 L2TP 失败",
             "summary": "连接属性设置 检查服务是否启动 启动注册表设置 查找HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\RasMan\\Parameters 新建 DWORD，名称设置为 ProhibitIPSec （注意中间 IP 的 P 是大写），值设置为 0 设置 AllowL2TPWeakCrypto 值为 1 查找 HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\PolicyAgent 设置 AssumeUDPEncapsulationContextOnSendRule 的值为 2&hellip;",
             "content_html": "<!-- wp:list -->\n<ul>\n<li>\n<h4><strong>连接属性设置</strong></h4>\n</li>\n<li>\n<h4><strong style=\"font-size: inherit;\">检查服务是否启动</strong></h4>\n</li>\n<li>\n<h4><strong style=\"font-size: inherit;\">启动</strong><strong>注册表设置</strong></h4>\n</li>\n</ul>\n<!-- /wp:list --><!-- wp:image {\"id\":403} --><!-- /wp:image --><!-- wp:image {\"id\":404} --><!-- /wp:image --><!-- wp:list --><!-- /wp:list --><!-- wp:list {\"ordered\":true} -->\n<ol>\n<li>查找<code>HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\RasMan\\Parameters</code></li>\n<li>新建 DWORD，名称设置为 ProhibitIPSec （注意中间 IP 的 P 是大写），值设置为 0</li>\n<li>设置 AllowL2TPWeakCrypto 值为 1</li>\n<li>查找 <br><code>HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\PolicyAgent</code></li>\n<li>设置 AssumeUDPEncapsulationContextOnSendRule 的值为 2</li>\n<li>重启电脑</li>\n</ol>\n<!-- /wp:list --><!-- wp:paragraph -->\n<p> </p>\n<!-- /wp:paragraph -->",
@@ -41,8 +41,8 @@
             "date_modified": "2026-05-01T15:52:37+09:00"
         },
         {
-            "id": "https://www.muchon.cn/posts/spoonshu-ju-zhuan-yi-chu-xian-unable-to-get-database-metadata-from-this-database-connection.html",
-            "url": "https://www.muchon.cn/posts/spoonshu-ju-zhuan-yi-chu-xian-unable-to-get-database-metadata-from-this-database-connection.html",
+            "id": "https://acrow.github.io/muchon/posts/spoonshu-ju-zhuan-yi-chu-xian-unable-to-get-database-metadata-from-this-database-connection.html",
+            "url": "https://acrow.github.io/muchon/posts/spoonshu-ju-zhuan-yi-chu-xian-unable-to-get-database-metadata-from-this-database-connection.html",
             "title": "Spoon 获取不到数据库元数据",
             "summary": "异常为：Unable to get database metadata from this database connection 直接说解决方案，但未必能解决所有问题，需要具体问题具体分析。 我们这里报的是某个字段不能为空，但是日志页签那里报的错误就是 Unable to get database metadata ... 所以，根据报错，给相关字段设置个默认值，再次执行就通过了！",
             "content_html": "<!-- wp:paragraph -->\n<p>异常为：Unable to get database metadata from this database connection</p>\n<p>直接说解决方案，但未必能解决所有问题，需要具体问题具体分析。</p>\n<!-- /wp:paragraph --><!-- wp:list {\"ordered\":true} -->\n<ol>\n<li>选择出问题的那个步骤</li>\n<li>在下面执行结果部分，选择 Preview data 页签（预览这个步骤的内容）</li>\n<li>发现这里面报的错误和日志页签里面报的错误不一样</li>\n</ol>\n<!-- /wp:list --><!-- wp:paragraph -->\n<p>我们这里报的是某个字段不能为空，但是日志页签那里报的错误就是 Unable to get database metadata ...</p>\n<!-- /wp:paragraph --><!-- wp:paragraph -->\n<p>所以，根据报错，给相关字段设置个默认值，再次执行就通过了！</p>\n<!-- /wp:paragraph -->",
@@ -55,8 +55,8 @@
             "date_modified": "2026-05-01T15:52:31+09:00"
         },
         {
-            "id": "https://www.muchon.cn/posts/guan-yu-staticpress2019-de-cuo-wu-chu-li.html",
-            "url": "https://www.muchon.cn/posts/guan-yu-staticpress2019-de-cuo-wu-chu-li.html",
+            "id": "https://acrow.github.io/muchon/posts/guan-yu-staticpress2019-de-cuo-wu-chu-li.html",
+            "url": "https://acrow.github.io/muchon/posts/guan-yu-staticpress2019-de-cuo-wu-chu-li.html",
             "title": "Staticpress2019 的错误处理",
             "summary": "客户wordpress网站要求实现全站静态化，我们经过调查选择了 staticpress2019 这个插件。实验阶段这个插件表现完美，生成的静态网站表现和动态完全一样。 然而去客户处部署后，发现出了问题：静态网站首页生成正常，但是打开文章报错，更具体是打开包含图片或视频的文章报错，纯文本的没事。 开始以为是媒体文件名称含中文的原因，可是改成拼音后，生成的静态网站依然报错。 仔细分析生成的静态文件，发现很多html被生成成了文件夹，而不是文件。文件夹内部是图片的网页文件。所以浏览器访问这个html时候，实际是访问服务器上面的文件夹，而此文件夹内没有 index.html 导致直接报错403 Forbiden。 查数据，看网站后台，调查很久，终于想通了原因。首先发现媒体库中的每个媒体也都有固定链接，而这些固定链接不知道为什么是其引用文章后面的链接。例如，文章 123.html 中包括图片 xyz.jpg，那么 xyz 这个媒体文件的固定链接就是 域名/123.html/xyz 。而观察 staticpress2019 生成静态文件时候的 log，它是先生成的媒体的固定链接，在生成文件的固定链接。导致 /123.html/ 提前被生成了目录，而后再生成 123.tml&hellip;",
             "content_html": "<!-- wp:paragraph -->\n<p>客户wordpress网站要求实现全站静态化，我们经过调查选择了 staticpress2019 这个插件。实验阶段这个插件表现完美，生成的静态网站表现和动态完全一样。</p>\n<!-- /wp:paragraph --><!-- wp:paragraph -->\n<p>然而去客户处部署后，发现出了问题：静态网站首页生成正常，但是打开文章报错，更具体是打开包含图片或视频的文章报错，纯文本的没事。</p>\n<!-- /wp:paragraph --><!-- wp:paragraph -->\n<p>开始以为是媒体文件名称含中文的原因，可是改成拼音后，生成的静态网站依然报错。</p>\n<!-- /wp:paragraph --><!-- wp:paragraph -->\n<p>仔细分析生成的静态文件，发现很多html被生成成了文件夹，而不是文件。文件夹内部是图片的网页文件。所以浏览器访问这个html时候，实际是访问服务器上面的文件夹，而此文件夹内没有 index.html 导致直接报错403 Forbiden。</p>\n<!-- /wp:paragraph --><!-- wp:paragraph -->\n<p>查数据，看网站后台，调查很久，终于想通了原因。首先发现媒体库中的每个媒体也都有固定链接，而这些固定链接不知道为什么是其引用文章后面的链接。例如，文章 123.html 中包括图片 xyz.jpg，那么 xyz 这个媒体文件的固定链接就是 <code>域名/123.html/xyz</code> 。而观察 staticpress2019 生成静态文件时候的 log，它是先生成的媒体的固定链接，在生成文件的固定链接。导致 /123.html/ 提前被生成了目录，而后再生成 123.tml 文件时候就失败了，然而 staticpress2029 会忽略继续后面的生成，最后导致了前面的问题。</p>\n<!-- /wp:paragraph --><!-- wp:paragraph -->\n<p>知道了原因，但是如何解决呢。又浪费了不少脑细胞，想明白了。是固定链接的问题。固定链接为了对搜索引擎友好设置成了 <code>%postid%.html </code>，所以文章的固定链接就都是 123.html 这种形式。最简单的修改就是把固定链接改成 <code>%postid%</code>这种形式。这样 123 会被生成目录，但是内部会生成 index.html。前面的媒体文件的固定链接依然会被提前生成，不过不会影响后面 index.html 的生成，这样静态网站就正常了。</p>\n<!-- /wp:paragraph --><!-- wp:paragraph -->\n<p>尽管是解决了，但是媒体的固定链接为什么是 <code>域名/文章链接/媒体名</code> 这种形式，还是没搞明白。我看了其它网站的媒体固定链接，直接就是<code> 域名/媒体名</code> ，这样的话，staticpress2019 也不会生成错误。</p>\n<!-- /wp:paragraph -->\n<p><!--EndFragment--></p>\n<p> </p>",
@@ -69,11 +69,11 @@
             "date_modified": "2026-05-01T15:35:51+09:00"
         },
         {
-            "id": "https://www.muchon.cn/posts/yong-chrome-da-kai-ie.html",
-            "url": "https://www.muchon.cn/posts/yong-chrome-da-kai-ie.html",
+            "id": "https://acrow.github.io/muchon/posts/yong-chrome-da-kai-ie.html",
+            "url": "https://acrow.github.io/muchon/posts/yong-chrome-da-kai-ie.html",
             "title": "用 Chrome 打开 IE",
             "summary": "给Chrome安装 IE Tab 插件，安装后还要安装 ietabhelper 然后才可以真正的用Chrome 使用 IE 内核打开网页。 不过由于国内无法使用谷歌商店，所以并不能直接通过浏览器安装插件。当然你可以科学上网，不过有些时候工作环境禁止访问互联网，因此只好下载插件手工安装了。 如果你在win10下用的最新版本的Chrome，会发现从网上下载的插件虽然安装成功了，但是 ietabhelper 无法安装。 这是因为版本的原因。 网上大部分插件都是10.5.1版，与最新版Chrome不兼容。 目前的最新版本是13.1.7.1 下面的附件即为该版本，并且压缩包内已经包含 ietabhelper安装包。 具体安装方法：",
-            "content_html": "<!-- wp:paragraph -->\n<p>给Chrome安装 IE Tab 插件，安装后还要安装 ietabhelper 然后才可以真正的用Chrome 使用 IE 内核打开网页。</p>\n<!-- /wp:paragraph --><!-- wp:paragraph -->\n<p>不过由于国内无法使用谷歌商店，所以并不能直接通过浏览器安装插件。当然你可以科学上网，不过有些时候工作环境禁止访问互联网，因此只好下载插件手工安装了。</p>\n<!-- /wp:paragraph --><!-- wp:paragraph -->\n<p>如果你在win10下用的最新版本的Chrome，会发现从网上下载的插件虽然安装成功了，但是 ietabhelper 无法安装。</p>\n<!-- /wp:paragraph --><!-- wp:paragraph -->\n<p>这是因为版本的原因。 网上大部分插件都是10.5.1版，与最新版Chrome不兼容。</p>\n<!-- /wp:paragraph --><!-- wp:paragraph -->\n<p>目前的最新版本是13.1.7.1</p>\n<!-- /wp:paragraph --><!-- wp:image {\"id\":124} --><!-- /wp:image --><!-- wp:paragraph -->\n<p>下面的附件即为该版本，并且压缩包内已经包含 ietabhelper安装包。</p>\n<!-- /wp:paragraph -->\n<p> </p>\n<!-- wp:file {\"id\":126,\"href\":\"https://www.muchon.cn/wp-content/uploads/2020/05/ChromeIeTab.zip\"} -->\n<div class=\"wp-block-file\"><a href=\"https://www.muchon.cn/wp-content/uploads/2020/05/ChromeIeTab.zip\">ChromeIeTab</a><a href=\"https://www.muchon.cn/wp-content/uploads/2020/05/ChromeIeTab.zip\" class=\"wp-block-file__button\" download=\"\">下载</a></div>\n<!-- /wp:file --><!-- wp:paragraph -->\n<p>具体安装方法：</p>\n<!-- /wp:paragraph --><!-- wp:list -->\n<ul>\n<li>解压缩</li>\n<li>打开 Chrome ，从菜单中选择 【更多工具】=》【扩展程序】</li>\n<li>把解压后的 crx 文件拖动到 Chrome 的 【扩展程序】画面，选择自动安装</li>\n<li>在解压后的 ietabhelper.msi 上点鼠标右键，选择【安装】</li>\n<li>安装完成后在 Chome 浏览器上会出现 ietab 插件的图标 <figure class=\"wp-image-127\"><img loading=\"lazy\"  src=\"https://www.muchon.cn/media/posts/22/image-1.png\" alt=\"\" sizes=\"(max-width: 48em) 100vw, 768px\" srcset=\"https://www.muchon.cn/media/posts/22/responsive/image-1-xs.png 300w ,https://www.muchon.cn/media/posts/22/responsive/image-1-sm.png 480w ,https://www.muchon.cn/media/posts/22/responsive/image-1-md.png 768w ,https://www.muchon.cn/media/posts/22/responsive/image-1-lg.png 1024w ,https://www.muchon.cn/media/posts/22/responsive/image-1-xl.png 1360w ,https://www.muchon.cn/media/posts/22/responsive/image-1-2xl.png 1600w\"></figure> ，点击这个图标就可以切换使用ie内核打开网页</li>\n<li>另外，其实可以在扩展文件中选中 ietab 插件，右键菜单选择【 ietab选项】 进行设置。可以设置匹配的url自动使用 ietab 打开，就不用每次都手工点击图标切换了。不过该设置需要能访问谷歌，所以没有条件的话也只能忽略。</li>\n</ul>\n<!-- /wp:list --><!-- wp:paragraph -->\n<p> </p>\n<!-- /wp:paragraph -->",
+            "content_html": "<!-- wp:paragraph -->\n<p>给Chrome安装 IE Tab 插件，安装后还要安装 ietabhelper 然后才可以真正的用Chrome 使用 IE 内核打开网页。</p>\n<!-- /wp:paragraph --><!-- wp:paragraph -->\n<p>不过由于国内无法使用谷歌商店，所以并不能直接通过浏览器安装插件。当然你可以科学上网，不过有些时候工作环境禁止访问互联网，因此只好下载插件手工安装了。</p>\n<!-- /wp:paragraph --><!-- wp:paragraph -->\n<p>如果你在win10下用的最新版本的Chrome，会发现从网上下载的插件虽然安装成功了，但是 ietabhelper 无法安装。</p>\n<!-- /wp:paragraph --><!-- wp:paragraph -->\n<p>这是因为版本的原因。 网上大部分插件都是10.5.1版，与最新版Chrome不兼容。</p>\n<!-- /wp:paragraph --><!-- wp:paragraph -->\n<p>目前的最新版本是13.1.7.1</p>\n<!-- /wp:paragraph --><!-- wp:image {\"id\":124} --><!-- /wp:image --><!-- wp:paragraph -->\n<p>下面的附件即为该版本，并且压缩包内已经包含 ietabhelper安装包。</p>\n<!-- /wp:paragraph -->\n<p> </p>\n<!-- wp:file {\"id\":126,\"href\":\"https://www.muchon.cn/wp-content/uploads/2020/05/ChromeIeTab.zip\"} -->\n<div class=\"wp-block-file\"><a href=\"https://www.muchon.cn/wp-content/uploads/2020/05/ChromeIeTab.zip\">ChromeIeTab</a><a href=\"https://www.muchon.cn/wp-content/uploads/2020/05/ChromeIeTab.zip\" class=\"wp-block-file__button\" download=\"\">下载</a></div>\n<!-- /wp:file --><!-- wp:paragraph -->\n<p>具体安装方法：</p>\n<!-- /wp:paragraph --><!-- wp:list -->\n<ul>\n<li>解压缩</li>\n<li>打开 Chrome ，从菜单中选择 【更多工具】=》【扩展程序】</li>\n<li>把解压后的 crx 文件拖动到 Chrome 的 【扩展程序】画面，选择自动安装</li>\n<li>在解压后的 ietabhelper.msi 上点鼠标右键，选择【安装】</li>\n<li>安装完成后在 Chome 浏览器上会出现 ietab 插件的图标 <figure class=\"wp-image-127\"><img loading=\"lazy\"  src=\"https://acrow.github.io/muchon/media/posts/22/image-1.png\" alt=\"\" sizes=\"(max-width: 48em) 100vw, 768px\" srcset=\"https://acrow.github.io/muchon/media/posts/22/responsive/image-1-xs.png 300w ,https://acrow.github.io/muchon/media/posts/22/responsive/image-1-sm.png 480w ,https://acrow.github.io/muchon/media/posts/22/responsive/image-1-md.png 768w ,https://acrow.github.io/muchon/media/posts/22/responsive/image-1-lg.png 1024w ,https://acrow.github.io/muchon/media/posts/22/responsive/image-1-xl.png 1360w ,https://acrow.github.io/muchon/media/posts/22/responsive/image-1-2xl.png 1600w\"></figure> ，点击这个图标就可以切换使用ie内核打开网页</li>\n<li>另外，其实可以在扩展文件中选中 ietab 插件，右键菜单选择【 ietab选项】 进行设置。可以设置匹配的url自动使用 ietab 打开，就不用每次都手工点击图标切换了。不过该设置需要能访问谷歌，所以没有条件的话也只能忽略。</li>\n</ul>\n<!-- /wp:list --><!-- wp:paragraph -->\n<p> </p>\n<!-- /wp:paragraph -->",
             "author": {
                 "name": "北京木憧科技有限公司"
             },
@@ -83,8 +83,8 @@
             "date_modified": "2026-05-01T15:52:25+09:00"
         },
         {
-            "id": "https://www.muchon.cn/posts/phpkai-qi-curl.html",
-            "url": "https://www.muchon.cn/posts/phpkai-qi-curl.html",
+            "id": "https://acrow.github.io/muchon/posts/phpkai-qi-curl.html",
+            "url": "https://acrow.github.io/muchon/posts/phpkai-qi-curl.html",
             "title": "PHP 开启 curl",
             "summary": "配置改完了不管用，解决方案是：把 PhP 根目录的 libssh2.dll 拷贝到 Apache 的 bin 目录下，再重启 Apache。",
             "content_html": "<!-- wp:paragraph -->\n<p>配置改完了不管用，解决方案是：把 PhP 根目录的 libssh2.dll 拷贝到 Apache 的 bin 目录下，再重启 Apache。</p>\n<!-- /wp:paragraph -->",
@@ -97,8 +97,8 @@
             "date_modified": "2026-05-01T15:52:15+09:00"
         },
         {
-            "id": "https://www.muchon.cn/posts/vue-shuang-xiang-shu-ju-tong-bu.html",
-            "url": "https://www.muchon.cn/posts/vue-shuang-xiang-shu-ju-tong-bu.html",
+            "id": "https://acrow.github.io/muchon/posts/vue-shuang-xiang-shu-ju-tong-bu.html",
+            "url": "https://acrow.github.io/muchon/posts/vue-shuang-xiang-shu-ju-tong-bu.html",
             "title": "VUE 双向数据同步",
             "summary": "vue报错： void mutating a prop directly since the value will be overwritten whenever the parent component re-renders.Instead, use a data or computed property&hellip;",
             "content_html": "<!-- wp:paragraph -->\n<p>vue报错：</p>\n<!-- /wp:paragraph --><!-- wp:code -->\n<pre class=\"wp-block-code\"><code>void mutating a prop directly since the value will be overwritten whenever the parent component re-renders.Instead, use a data or computed property based on the prop's value. Prop being mutated:</code></pre>\n<!-- /wp:code --><!-- wp:paragraph -->\n<p>这是由于子组件更新了父组件传入的属性值导致的，而vue不建议双向数据同步，要求数据是单向传递。然而，有时我们确实需要子组件与父组件更新同一个值，vue的解决方案如下：</p>\n<!-- /wp:paragraph --><!-- wp:paragraph -->\n<p>子组件：</p>\n<!-- /wp:paragraph --><!-- wp:code -->\n<pre class=\"wp-block-code\"><code>&lt;template&gt;\n  &lt;div vi-if=\"visible\"&gt;\n    我是子组件\n    &lt;button @click=\"hide\"&gt;关闭&lt;/button&gt;\n  &lt;/div&gt;\n&lt;/template&gt;\n&lt;script&gt;\nexport default {\n  props: {\n    visible: {type: Boolean, default: false}\n  }\n  methods: {\n    hide () {\n      this.$emit('update:visible', false)\n    }\n  }\n}\n&lt;/script&gt;\n</code></pre>\n<!-- /wp:code --><!-- wp:paragraph -->\n<p>父组件：</p>\n<!-- /wp:paragraph --><!-- wp:code -->\n<pre class=\"wp-block-code\"><code>&lt;template&gt;\n    &lt;div&gt;\n       &lt;button @click=\"show\"&gt;显示&lt;/button&gt;\n       &lt;child v-model=\"entity\" :visible.sync=\"showChild\"/&gt;\n    &lt;/div&gt;\n&lt;/template&gt;\n&lt;script&gt;\nexport default {\n  components: {\n    'child': () =&gt; import('./child')\n  },\n  data () {\n    return {\n      showChild: false\n    }\n  },\n  methods: {\n    show() {\n      this.showEChild = true\n    }\n  }\n}\n&lt;/script&gt;\n</code></pre>\n<!-- /wp:code --><!-- wp:paragraph -->\n<p>关键点是父组件上面的 <strong>.sync</strong> 与子组件上面的 <strong>update:</strong></p>\n<!-- /wp:paragraph -->",
@@ -112,8 +112,8 @@
             "date_modified": "2026-05-01T15:46:28+09:00"
         },
         {
-            "id": "https://www.muchon.cn/posts/postman-da-bu-kai-liao.html",
-            "url": "https://www.muchon.cn/posts/postman-da-bu-kai-liao.html",
+            "id": "https://acrow.github.io/muchon/posts/postman-da-bu-kai-liao.html",
+            "url": "https://acrow.github.io/muchon/posts/postman-da-bu-kai-liao.html",
             "title": "Postman 打不开了",
             "summary": "打开时报错 “Could not open Postman”， 重新安装还是报 。 请按照下面方法处理： 需要删除的目录： C:\\Users\\&lt;user&gt;\\AppData\\Roaming\\Postman C:\\Users\\&lt;user&gt;\\AppData\\Local\\Postman",
             "content_html": "<!-- wp:paragraph -->\n<p>打开时报错 “Could not open Postman”， 重新安装还是报 。</p>\n<p>请按照下面方法处理：</p>\n<!-- /wp:paragraph --><!-- wp:paragraph -->\n<ol>\n<li>卸载postman</li>\n<li>删除下面两个目录 </li>\n<li>重新安装postman</li>\n</ol>\n<p>需要删除的目录：</p>\n<p><code>C:\\Users\\&lt;user&gt;\\AppData\\Roaming\\Postman</code></p>\n<p><code>C:\\Users\\&lt;user&gt;\\AppData\\Local\\Postman</code></p>",
@@ -126,8 +126,8 @@
             "date_modified": "2026-05-01T15:45:21+09:00"
         },
         {
-            "id": "https://www.muchon.cn/posts/guan-yu-nginxpei-zhi-bu-qi-zuo-yong.html",
-            "url": "https://www.muchon.cn/posts/guan-yu-nginxpei-zhi-bu-qi-zuo-yong.html",
+            "id": "https://acrow.github.io/muchon/posts/guan-yu-nginxpei-zhi-bu-qi-zuo-yong.html",
+            "url": "https://acrow.github.io/muchon/posts/guan-yu-nginxpei-zhi-bu-qi-zuo-yong.html",
             "title": "Nginx 配置不起作用",
             "summary": "原因其实很简单，就是 Nginx 并没有真正退出。所以修改 config 之后，怎么刷新网站都没效果。 阿里云免费证书，正确的方法是直接在域名解析哪里添加 TXT 类型的解析就可以了。不过第一次时候，我并不知道，所以用了最笨的方法，在 nginx 里配置。在这里记录一下踩过的坑。 现在阿里云的免费https证书好麻烦。以前很简单的就能申请到。现在要先通过云盾证书服务购买，虽然是免费的也得走个购买流程。买了之后再申请，申请之前要先验证，证明这个域名是你的，要求你把它一个文件放在你域名后面某个固定地址。 一开始我想，这还不简单，建个目录不就OK了。结果发现网站在windows上，阿里云给的这个固定地址是.打头的，windows目录名禁止用.打头。 那好吧，那我直接用nginx配置一下，把这个固定地址映射到某个目录，文件放目录里不就OK了。结果折腾了快一天，才算搞定了。 nginx确实也玩的不熟练，查资料看上去很简单嘛， location 配置。但是改完配置，这个路径始终就是404。怎么都出不来。 后来发现我用的是root，这个root的话，相当于目录是根，还是要在目录里面建目录的。应该用alais，赶紧改。然而，没什么屌用，依然404。要崩溃了啊，nginx的配置太难了。 这期间还怀疑是不是版本问题，安装了nginx的新版本。问题依旧。 直到最后我终于搞清了原因。可能大家也猜到了。原来nginx根本没有真正退出，所以之前的配置一直有效。原来的nginx目录下有两个批处理文件stop.bat和restart.bat，问题就在这两个身上。有时候能退出干净，有时候退不干净。导致旧的进程和新的进程可能同时存在。知道我后来发现任务管理器里面竟然有8个nginx进程。全停止了，再启动，发现配置生效了。 实时上根本不需要这么做，因为直接在阿里云域名解析那里添加text类型的子域名就行了。(((φ(◎ロ◎;)φ))) 记录一下这个弱智的经历，希望下回别再犯同样的错误！",
             "content_html": "<!-- wp:paragraph -->\n<p>原因其实很简单，就是 Nginx 并没有真正退出。所以修改 config 之后，怎么刷新网站都没效果。</p>\n<p>阿里云免费证书，正确的方法是直接在域名解析哪里添加 TXT 类型的解析就可以了。不过第一次时候，我并不知道，所以用了最笨的方法，在 nginx 里配置。在这里记录一下踩过的坑。</p>\n<p>现在阿里云的免费https证书好麻烦。以前很简单的就能申请到。现在要先通过云盾证书服务购买，虽然是免费的也得走个购买流程。买了之后再申请，申请之前要先验证，证明这个域名是你的，要求你把它一个文件放在你域名后面某个固定地址。</p>\n<!-- /wp:paragraph --><!-- wp:paragraph -->\n<p>一开始我想，这还不简单，建个目录不就OK了。结果发现网站在windows上，阿里云给的这个固定地址是.打头的，windows目录名禁止用.打头。</p>\n<!-- /wp:paragraph --><!-- wp:paragraph -->\n<p>那好吧，那我直接用nginx配置一下，把这个固定地址映射到某个目录，文件放目录里不就OK了。结果折腾了快一天，才算搞定了。</p>\n<!-- /wp:paragraph --><!-- wp:paragraph -->\n<p>nginx确实也玩的不熟练，查资料看上去很简单嘛， location 配置。但是改完配置，这个路径始终就是404。怎么都出不来。</p>\n<!-- /wp:paragraph --><!-- wp:paragraph -->\n<p>后来发现我用的是root，这个root的话，相当于目录是根，还是要在目录里面建目录的。应该用alais，赶紧改。然而，没什么屌用，依然404。要崩溃了啊，nginx的配置太难了。</p>\n<!-- /wp:paragraph --><!-- wp:paragraph -->\n<p>这期间还怀疑是不是版本问题，安装了nginx的新版本。问题依旧。</p>\n<!-- /wp:paragraph --><!-- wp:paragraph -->\n<p>直到最后我终于搞清了原因。可能大家也猜到了。原来nginx根本没有真正退出，所以之前的配置一直有效。原来的nginx目录下有两个批处理文件stop.bat和restart.bat，问题就在这两个身上。有时候能退出干净，有时候退不干净。导致旧的进程和新的进程可能同时存在。知道我后来发现任务管理器里面竟然有8个nginx进程。全停止了，再启动，发现配置生效了。</p>\n<p>实时上根本不需要这么做，因为直接在阿里云域名解析那里添加text类型的子域名就行了。(((φ(◎ロ◎;)φ)))</p>\n<!-- /wp:paragraph --><!-- wp:paragraph -->\n<p>记录一下这个弱智的经历，希望下回别再犯同样的错误！</p>\n<!-- /wp:paragraph -->",
@@ -140,8 +140,8 @@
             "date_modified": "2026-05-01T16:09:50+09:00"
         },
         {
-            "id": "https://www.muchon.cn/posts/ji-lu-yi-ci-wordpressqian-yi-guo-cheng.html",
-            "url": "https://www.muchon.cn/posts/ji-lu-yi-ci-wordpressqian-yi-guo-cheng.html",
+            "id": "https://acrow.github.io/muchon/posts/ji-lu-yi-ci-wordpressqian-yi-guo-cheng.html",
+            "url": "https://acrow.github.io/muchon/posts/ji-lu-yi-ci-wordpressqian-yi-guo-cheng.html",
             "title": "记录一次 wordpress 迁移过程",
             "summary": "迁移前的wordpress是用docker部署的，迁移后要放在windows的Pc机上 docker exec -it 容器名 mysqldump -u用户名 -p密码 数据库名 &gt;./db.sql 把迁移前的wordpress目录整体备份打包为 oldWp.zip 直接下载、安装 phpStudy（phpnow已经废了，害我走了弯路），默认是安装在了D:/phpStudyPro目录 用PhpStudy的控制面板追加wordpress数据库 下载wordpress，解压后直接放在 phpStudyPro目录中的WWW子目录中 （这一步可能不需要） 浏览器里面输入 https://localhost，按照向导生成wordpress网站（这一步可能不需要） 把数据库备份db.sql导入wordpress数据库 mysql -u用户名&hellip;",
             "content_html": "<!-- wp:paragraph -->\n<p>迁移前的wordpress是用docker部署的，迁移后要放在windows的Pc机上</p>\n<!-- /wp:paragraph --><!-- wp:list -->\n<ul>\n<li>把迁移前的数据库结构和数据一起备份为db.sql</li>\n</ul>\n<!-- /wp:list --><!-- wp:code -->\n<pre class=\"wp-block-code\"><code>docker exec -it 容器名 mysqldump -u用户名 -p密码 数据库名 &gt;./db.sql</code></pre>\n<!-- /wp:code --><!-- wp:list -->\n<ul>\n<li>把迁移前的wordpress目录整体备份打包为 oldWp.zip</li>\n<li>直接下载、安装 phpStudy（phpnow已经废了，害我走了弯路），默认是安装在了D:/phpStudyPro目录</li>\n<li>用PhpStudy的控制面板追加wordpress数据库</li>\n<li>下载wordpress，解压后直接放在 phpStudyPro目录中的WWW子目录中 <br>（这一步可能不需要）</li>\n<li>浏览器里面输入 https://localhost，按照向导生成wordpress网站（这一步可能不需要）</li>\n<li>把数据库备份db.sql导入wordpress数据库</li>\n</ul>\n<!-- /wp:list --><!-- wp:code -->\n<pre class=\"wp-block-code\"><code>mysql -u用户名 -p密码\nuse wordpress\nsource d:/dbsql</code></pre>\n<!-- /wp:code --><!-- wp:list -->\n<ul>\n<li>把oldWp.zip解压至phpStudyPro/WWW</li>\n<li>刷新https://localhost</li>\n</ul>\n<!-- /wp:list --><!-- wp:paragraph -->\n<p>下载和安装新的wordpress，不是必须的。我是因为把旧的wordpress部署后，怎么都连不上数据库。所以安装新的对比了一下 wp_config.php。原来是因为host不正确。之前是docker部署的所以这里需要把host从db:3306改为localhost。</p>\n<!-- /wp:paragraph -->",

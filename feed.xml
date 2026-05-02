@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
     <title>木憧科技</title>
-    <link href="https://www.muchon.cn/feed.xml" rel="self" />
-    <link href="https://www.muchon.cn" />
+    <link href="https://acrow.github.io/muchon/feed.xml" rel="self" />
+    <link href="https://acrow.github.io/muchon" />
     <updated>2026-05-01T20:11:44+09:00</updated>
     <author>
         <name>北京木憧科技有限公司</name>
     </author>
-    <id>https://www.muchon.cn</id>
+    <id>https://acrow.github.io/muchon</id>
 
     <entry>
         <title>用 Publii 替换 Wordpress</title>
         <author>
             <name>北京木憧科技有限公司</name>
         </author>
-        <link href="https://www.muchon.cn/posts/yong-publii-ti-huan-wordpress.html"/>
-        <id>https://www.muchon.cn/posts/yong-publii-ti-huan-wordpress.html</id>
+        <link href="https://acrow.github.io/muchon/posts/yong-publii-ti-huan-wordpress.html"/>
+        <id>https://acrow.github.io/muchon/posts/yong-publii-ti-huan-wordpress.html</id>
 
         <updated>2026-05-01T16:52:38+09:00</updated>
             <summary type="html">
@@ -45,8 +45,8 @@
         <author>
             <name>北京木憧科技有限公司</name>
         </author>
-        <link href="https://www.muchon.cn/posts/win10win11-lian-jie-l2tpshi-bai.html"/>
-        <id>https://www.muchon.cn/posts/win10win11-lian-jie-l2tpshi-bai.html</id>
+        <link href="https://acrow.github.io/muchon/posts/win10win11-lian-jie-l2tpshi-bai.html"/>
+        <id>https://acrow.github.io/muchon/posts/win10win11-lian-jie-l2tpshi-bai.html</id>
             <category term="VPN"/>
             <category term="L2TP"/>
 
@@ -90,8 +90,8 @@
         <author>
             <name>北京木憧科技有限公司</name>
         </author>
-        <link href="https://www.muchon.cn/posts/spoonshu-ju-zhuan-yi-chu-xian-unable-to-get-database-metadata-from-this-database-connection.html"/>
-        <id>https://www.muchon.cn/posts/spoonshu-ju-zhuan-yi-chu-xian-unable-to-get-database-metadata-from-this-database-connection.html</id>
+        <link href="https://acrow.github.io/muchon/posts/spoonshu-ju-zhuan-yi-chu-xian-unable-to-get-database-metadata-from-this-database-connection.html"/>
+        <id>https://acrow.github.io/muchon/posts/spoonshu-ju-zhuan-yi-chu-xian-unable-to-get-database-metadata-from-this-database-connection.html</id>
 
         <updated>2021-12-13T19:49:43+09:00</updated>
             <summary type="html">
@@ -123,8 +123,8 @@
         <author>
             <name>北京木憧科技有限公司</name>
         </author>
-        <link href="https://www.muchon.cn/posts/guan-yu-staticpress2019-de-cuo-wu-chu-li.html"/>
-        <id>https://www.muchon.cn/posts/guan-yu-staticpress2019-de-cuo-wu-chu-li.html</id>
+        <link href="https://acrow.github.io/muchon/posts/guan-yu-staticpress2019-de-cuo-wu-chu-li.html"/>
+        <id>https://acrow.github.io/muchon/posts/guan-yu-staticpress2019-de-cuo-wu-chu-li.html</id>
 
         <updated>2021-02-09T01:01:10+09:00</updated>
             <summary type="html">
@@ -159,8 +159,8 @@
         <author>
             <name>北京木憧科技有限公司</name>
         </author>
-        <link href="https://www.muchon.cn/posts/yong-chrome-da-kai-ie.html"/>
-        <id>https://www.muchon.cn/posts/yong-chrome-da-kai-ie.html</id>
+        <link href="https://acrow.github.io/muchon/posts/yong-chrome-da-kai-ie.html"/>
+        <id>https://acrow.github.io/muchon/posts/yong-chrome-da-kai-ie.html</id>
 
         <updated>2020-05-15T01:16:40+09:00</updated>
             <summary type="html">
@@ -194,7 +194,7 @@
 <li>打开 Chrome ，从菜单中选择 【更多工具】=》【扩展程序】</li>
 <li>把解压后的 crx 文件拖动到 Chrome 的 【扩展程序】画面，选择自动安装</li>
 <li>在解压后的 ietabhelper.msi 上点鼠标右键，选择【安装】</li>
-<li>安装完成后在 Chome 浏览器上会出现 ietab 插件的图标 <figure class="wp-image-127"><img loading="lazy"  src="https://www.muchon.cn/media/posts/22/image-1.png" alt="" sizes="(max-width: 48em) 100vw, 768px" srcset="https://www.muchon.cn/media/posts/22/responsive/image-1-xs.png 300w ,https://www.muchon.cn/media/posts/22/responsive/image-1-sm.png 480w ,https://www.muchon.cn/media/posts/22/responsive/image-1-md.png 768w ,https://www.muchon.cn/media/posts/22/responsive/image-1-lg.png 1024w ,https://www.muchon.cn/media/posts/22/responsive/image-1-xl.png 1360w ,https://www.muchon.cn/media/posts/22/responsive/image-1-2xl.png 1600w"></figure> ，点击这个图标就可以切换使用ie内核打开网页</li>
+<li>安装完成后在 Chome 浏览器上会出现 ietab 插件的图标 <figure class="wp-image-127"><img loading="lazy"  src="https://acrow.github.io/muchon/media/posts/22/image-1.png" alt="" sizes="(max-width: 48em) 100vw, 768px" srcset="https://acrow.github.io/muchon/media/posts/22/responsive/image-1-xs.png 300w ,https://acrow.github.io/muchon/media/posts/22/responsive/image-1-sm.png 480w ,https://acrow.github.io/muchon/media/posts/22/responsive/image-1-md.png 768w ,https://acrow.github.io/muchon/media/posts/22/responsive/image-1-lg.png 1024w ,https://acrow.github.io/muchon/media/posts/22/responsive/image-1-xl.png 1360w ,https://acrow.github.io/muchon/media/posts/22/responsive/image-1-2xl.png 1600w"></figure> ，点击这个图标就可以切换使用ie内核打开网页</li>
 <li>另外，其实可以在扩展文件中选中 ietab 插件，右键菜单选择【 ietab选项】 进行设置。可以设置匹配的url自动使用 ietab 打开，就不用每次都手工点击图标切换了。不过该设置需要能访问谷歌，所以没有条件的话也只能忽略。</li>
 </ul>
 <!-- /wp:list --><!-- wp:paragraph -->
@@ -208,8 +208,8 @@
         <author>
             <name>北京木憧科技有限公司</name>
         </author>
-        <link href="https://www.muchon.cn/posts/phpkai-qi-curl.html"/>
-        <id>https://www.muchon.cn/posts/phpkai-qi-curl.html</id>
+        <link href="https://acrow.github.io/muchon/posts/phpkai-qi-curl.html"/>
+        <id>https://acrow.github.io/muchon/posts/phpkai-qi-curl.html</id>
 
         <updated>2020-04-27T01:50:31+09:00</updated>
             <summary type="html">
@@ -230,8 +230,8 @@
         <author>
             <name>北京木憧科技有限公司</name>
         </author>
-        <link href="https://www.muchon.cn/posts/vue-shuang-xiang-shu-ju-tong-bu.html"/>
-        <id>https://www.muchon.cn/posts/vue-shuang-xiang-shu-ju-tong-bu.html</id>
+        <link href="https://acrow.github.io/muchon/posts/vue-shuang-xiang-shu-ju-tong-bu.html"/>
+        <id>https://acrow.github.io/muchon/posts/vue-shuang-xiang-shu-ju-tong-bu.html</id>
             <category term="VUE"/>
 
         <updated>2020-01-23T00:53:08+09:00</updated>
@@ -308,8 +308,8 @@ export default {
         <author>
             <name>北京木憧科技有限公司</name>
         </author>
-        <link href="https://www.muchon.cn/posts/postman-da-bu-kai-liao.html"/>
-        <id>https://www.muchon.cn/posts/postman-da-bu-kai-liao.html</id>
+        <link href="https://acrow.github.io/muchon/posts/postman-da-bu-kai-liao.html"/>
+        <id>https://acrow.github.io/muchon/posts/postman-da-bu-kai-liao.html</id>
 
         <updated>2019-10-10T10:03:04+09:00</updated>
             <summary type="html">
@@ -339,8 +339,8 @@ export default {
         <author>
             <name>北京木憧科技有限公司</name>
         </author>
-        <link href="https://www.muchon.cn/posts/guan-yu-nginxpei-zhi-bu-qi-zuo-yong.html"/>
-        <id>https://www.muchon.cn/posts/guan-yu-nginxpei-zhi-bu-qi-zuo-yong.html</id>
+        <link href="https://acrow.github.io/muchon/posts/guan-yu-nginxpei-zhi-bu-qi-zuo-yong.html"/>
+        <id>https://acrow.github.io/muchon/posts/guan-yu-nginxpei-zhi-bu-qi-zuo-yong.html</id>
 
         <updated>2019-08-23T22:44:17+09:00</updated>
             <summary type="html">
@@ -378,8 +378,8 @@ export default {
         <author>
             <name>北京木憧科技有限公司</name>
         </author>
-        <link href="https://www.muchon.cn/posts/ji-lu-yi-ci-wordpressqian-yi-guo-cheng.html"/>
-        <id>https://www.muchon.cn/posts/ji-lu-yi-ci-wordpressqian-yi-guo-cheng.html</id>
+        <link href="https://acrow.github.io/muchon/posts/ji-lu-yi-ci-wordpressqian-yi-guo-cheng.html"/>
+        <id>https://acrow.github.io/muchon/posts/ji-lu-yi-ci-wordpressqian-yi-guo-cheng.html</id>
 
         <updated>2019-08-23T22:15:25+09:00</updated>
             <summary type="html">
